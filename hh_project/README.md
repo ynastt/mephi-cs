@@ -1,6 +1,6 @@
 <center> <img src = https://raw.githubusercontent.com/AndreyRysistov/DatasetsForPandas/main/hh%20label.jpg alt="drawing" style="width:400px;">
   
-# Проект: анализ резюме из HeadHunter
+# Проект: Анализ резюме из HeadHunter
 
 ## Структура проекта
 Проект представлен в jupyter-ноутбуке project.ipynb. Поскольку файл весит более 25МБ, его можно скачать с [диска](https://drive.google.com/drive/folders/1_WNZvcvnAofBnkQD9_bjMrbtxfsXa7wl?usp=sharing) или же распаковав архив project.zip.
