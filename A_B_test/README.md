@@ -19,4 +19,5 @@
 - [Саймон Джексон, статья «How Booking.com increases the power of online experiments with CUPED», 2018 г.](https://medium.com/m/global-identity-2?redirectUrl=https%3A%2F%2Fbooking.ai%2Fhow-booking-com-increases-the-power-of-online-experiments-with-cuped-995d186fff1d)
 - [София Янг, статья «Online Experiments Tricks — Variance Reduction», 2012 г.](https://medium.com/m/global-identity-2?redirectUrl=https%3A%2F%2Ftowardsdatascience.com%2Fonline-experiments-tricks-variance-reduction-291b6032dcd7)
 
-### 3 Модуль
+### Модуль 3. Разбор кейсов на основе пайплайна проведения A/B-тестирования
+- [Кохави, Тан, Сюй, книга «Доверительное А/В-тестирование. Практическое руководство по контролируемым экспериментам», 2021 г.](https://www.labirint.ru/books/787312/)
