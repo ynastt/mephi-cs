@@ -1,0 +1,1384 @@
+Script started on 2025-04-09 22:25:29+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="98" LINES="25"]
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mping 8.8.8.8[27m ping 8.8.8.8
+[?2004l
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=247 time=24.9 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=247 time=24.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=247 time=24.4 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=247 time=24.4 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=247 time=25.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=247 time=24.8 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=247 time=24.8 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=247 time=24.6 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=247 time=24.6 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=247 time=24.7 ms
+64 bytes from 8.8.8.8: icmp_seq=11 ttl=247 time=24.9 ms
+64 bytes from 8.8.8.8: icmp_seq=12 ttl=247 time=24.9 ms
+64 bytes from 8.8.8.8: icmp_seq=13 ttl=247 time=25.0 ms
+64 bytes from 8.8.8.8: icmp_seq=14 ttl=247 time=24.8 ms
+64 bytes from 8.8.8.8: icmp_seq=15 ttl=247 time=24.7 ms
+64 bytes from 8.8.8.8: icmp_seq=16 ttl=247 time=24.7 ms
+64 bytes from 8.8.8.8: icmp_seq=17 ttl=247 time=24.5 ms
+64 bytes from 8.8.8.8: icmp_seq=18 ttl=247 time=24.7 ms
+64 bytes from 8.8.8.8: icmp_seq=19 ttl=247 time=24.9 ms
+64 bytes from 8.8.8.8: icmp_seq=20 ttl=247 time=24.7 ms
+64 bytes from 8.8.8.8: icmp_seq=21 ttl=247 time=33.9 ms
+64 bytes from 8.8.8.8: icmp_seq=22 ttl=247 time=24.8 ms
+64 bytes from 8.8.8.8: icmp_seq=23 ttl=247 time=24.6 ms
+64 bytes from 8.8.8.8: icmp_seq=24 ttl=247 time=24.1 ms
+64 bytes from 8.8.8.8: icmp_seq=25 ttl=247 time=24.4 ms
+^C
+--- 8.8.8.8 ping statistics ---
+25 packets transmitted, 25 received, 0% packet loss, time 24486ms
+rtt min/avg/max/mdev = 24.149/25.056/33.917/1.823 ms
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mtraceroute 8.8.4.4[27m traceroute 8.8.4.4
+[?2004l
+Command 'traceroute' not found, but can be installed with:
+apt install inetutils-traceroute  # version 2:2.2-2ubuntu0.1, or
+apt install traceroute            # version 1:2.1.0-2
+Ask your administrator to install one of them.
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo apt instal  [K[7m traceroute[27m  traceroute
+[?2004l
+[1;31mE: [0mInvalid operation instal[0m
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo apt instal  traceroute[1@l
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+The following NEW packages will be installed:
+  traceroute
+0 upgraded, 1 newly installed, 0 to remove and 25 not upgraded.
+Need to get 45.4 kB of archives.
+After this operation, 152 kB of additional disk space will be used.
+[33m
+0% [Working][0m
+            
+Get:1 https://mirror.yandex.ru/ubuntu jammy/universe amd64 traceroute amd64 1:2.1.0-2 [45.4 kB]
+[33m
+28% [1 traceroute 16.1 kB/45.4 kB 35%][0m[33m
+                                      
+100% [Working][0m
+              
+Fetched 45.4 kB in 0s (450 kB/s)
+
+7[0;24r8[1ASelecting previously unselected package traceroute.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 94004 files and directories currently installed.)
+Preparing to unpack .../traceroute_1%3a2.1.0-2_amd64.deb ...
+7[25;0f[42m[30mProgress: [  0%][49m[39m [............................................................................] 87[25;0f[42m[30mProgress: [ 20%][49m[39m [###############.............................................................] 8Unpacking traceroute (1:2.1.0-2) ...
+7[25;0f[42m[30mProgress: [ 40%][49m[39m [##############################..............................................] 8Setting up traceroute (1:2.1.0-2) ...
+7[25;0f[42m[30mProgress: [ 60%][49m[39m [#############################################...............................] 8update-alternatives: using /usr/bin/traceroute.db to provide /usr/bin/traceroute (traceroute) in auto mode
+update-alternatives: using /usr/bin/traceroute6.db to provide /usr/bin/traceroute6 (traceroute6) in auto mode
+update-alternatives: using /usr/bin/lft.db to provide /usr/bin/lft (lft) in auto mode
+update-alternatives: using /usr/bin/traceproto.db to provide /usr/bin/traceproto (traceproto) in auto mode
+update-alternatives: using /usr/sbin/tcptraceroute.db to provide /usr/sbin/tcptraceroute (tcptraceroute) in auto mode
+7[25;0f[42m[30mProgress: [ 80%][49m[39m [############################################################................] 8Processing triggers for man-db (2.10.2-1) ...
+
+7[0;25r8[1A[JScanning processes... [                                                                          ]
+Scanning processes... [                                                                          ]
+Scanning processes... [=                                                                         ]
+Scanning processes... [==                                                                        ]
+Scanning processes... [==                                                                        ]
+Scanning processes... [===                                                                       ]
+Scanning processes... [====                                                                      ]
+Scanning processes... [====                                                                      ]
+Scanning processes... [=====                                                                     ]
+Scanning processes... [======                                                                    ]
+Scanning processes... [======                                                                    ]
+Scanning processes... [=======                                                                   ]
+Scanning processes... [========                                                                  ]
+Scanning processes... [========                                                                  ]
+Scanning processes... [=========                                                                 ]
+Scanning processes... [==========                                                                ]
+Scanning processes... [==========                                                                ]
+Scanning processes... [===========                                                               ]
+Scanning processes... [============                                                              ]
+Scanning processes... [============                                                              ]
+Scanning processes... [=============                                                             ]
+Scanning processes... [==============                                                            ]
+Scanning processes... [==============                                                            ]
+Scanning processes... [===============                                                           ]
+Scanning processes... [================                                                          ]
+Scanning processes... [================                                                          ]
+Scanning processes... [=================                                                         ]
+Scanning processes... [==================                                                        ]
+Scanning processes... [===================                                                       ]
+Scanning processes... [===================                                                       ]
+Scanning processes... [====================                                                      ]
+Scanning processes... [=====================                                                     ]
+Scanning processes... [=====================                                                     ]
+Scanning processes... [======================                                                    ]
+Scanning processes... [=======================                                                   ]
+Scanning processes... [=======================                                                   ]
+Scanning processes... [========================                                                  ]
+Scanning processes... [=========================                                                 ]
+Scanning processes... [=========================                                                 ]
+Scanning processes... [==========================                                                ]
+Scanning processes... [===========================                                               ]
+Scanning processes... [===========================                                               ]
+Scanning processes... [============================                                              ]
+Scanning processes... [=============================                                             ]
+Scanning processes... [=============================                                             ]
+Scanning processes... [==============================                                            ]
+Scanning processes... [===============================                                           ]
+Scanning processes... [===============================                                           ]
+Scanning processes... [================================                                          ]
+Scanning processes... [=================================                                         ]
+Scanning processes... [=================================                                         ]
+Scanning processes... [==================================                                        ]
+Scanning processes... [===================================                                       ]
+Scanning processes... [===================================                                       ]
+Scanning processes... [====================================                                      ]
+Scanning processes... [=====================================                                     ]
+Scanning processes... [======================================                                    ]
+Scanning processes... [======================================                                    ]
+Scanning processes... [=======================================                                   ]
+Scanning processes... [========================================                                  ]
+Scanning processes... [========================================                                  ]
+Scanning processes... [=========================================                                 ]
+Scanning processes... [==========================================                                ]
+Scanning processes... [==========================================                                ]
+Scanning processes... [===========================================                               ]
+Scanning processes... [============================================                              ]
+Scanning processes... [============================================                              ]
+Scanning processes... [=============================================                             ]
+Scanning processes... [==============================================                            ]
+Scanning processes... [==============================================                            ]
+Scanning processes... [===============================================                           ]
+Scanning processes... [================================================                          ]
+Scanning processes... [================================================                          ]
+Scanning processes... [=================================================                         ]
+Scanning processes... [==================================================                        ]
+Scanning processes... [==================================================                        ]
+Scanning processes... [===================================================                       ]
+Scanning processes... [====================================================                      ]
+Scanning processes... [====================================================                      ]
+Scanning processes... [=====================================================                     ]
+Scanning processes... [======================================================                    ]
+Scanning processes... [======================================================                    ]
+Scanning processes... [=======================================================                   ]
+Scanning processes... [========================================================                  ]
+Scanning processes... [=========================================================                 ]
+Scanning processes... [=========================================================                 ]
+Scanning processes... [==========================================================                ]
+Scanning processes... [===========================================================               ]
+Scanning processes... [===========================================================               ]
+Scanning processes... [============================================================              ]
+Scanning processes... [=============================================================             ]
+Scanning processes... [=============================================================             ]
+Scanning processes... [==============================================================            ]
+Scanning processes... [===============================================================           ]
+Scanning processes... [===============================================================           ]
+Scanning processes... [================================================================          ]
+Scanning processes... [=================================================================         ]
+Scanning processes... [=================================================================         ]
+Scanning processes... [==================================================================        ]
+Scanning processes... [===================================================================       ]
+Scanning processes... [===================================================================       ]
+Scanning processes... [====================================================================      ]
+Scanning processes... [=====================================================================     ]
+Scanning processes... [=====================================================================     ]
+Scanning processes... [======================================================================    ]
+Scanning processes... [=======================================================================   ]
+Scanning processes... [=======================================================================   ]
+Scanning processes... [========================================================================  ]
+Scanning processes... [========================================================================= ]
+Scanning processes... [==========================================================================]
+Scanning processes...                                                                             
+Scanning linux images... [                                                                       ]
+Scanning linux images... [=================                                                      ]
+Scanning linux images... [===================================                                    ]
+Scanning linux images... [=====================================================                  ]
+Scanning linux images... [=======================================================================]
+Scanning linux images...                                                                          
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo apt install  traceroute[1P[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Ptraceroute 8.8.4.4
+[?2004l
+traceroute to 8.8.4.4 (8.8.4.4), 30 hops max, 60 byte packets
+ 1  10.0.2.2 (10.0.2.2)  0.751 ms  0.600 ms  0.536 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *^C
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ mtr 8.8.4.4
+[?2004l
+[?1049h[22;0;0t[1;25r(B[m[4l[?7h[39;49m[39;49m(B[m[H[2J[1;38H(B[0;1m[1K My traceroute  [v0.95]
+[2d(B[mubuntu-jammy (10.0.2.15) -> 8.8.4.4 (8.8.4.4)[2;74H2025-04-09T22:29:53+0000
+[3dKeys:  (B[0;1mH(B[melp   (B[0;1mD(B[misplay mode   (B[0;1mR(B[mestart statistics   (B[0;1mO(B[mrder of fields   (B[0;1mq(B[muit[4;55H(B[0;1m   Packets[15X[4;80HPings
+[5d Host[5;55H Loss%   Snt   Last   Avg  Best  Wrst StDev
+[3d(B[m[6d 1. 10.0.2.2[6;57H0.0%     1    0.6   0.6   0.6   0.6   0.0
+[7d 2. (B[0;1m(waiting for reply)
+[3d(B[m[2;92H4
+[3d[7;5H192.168.1.1 [7b[7;57H0.0%     1  118.5 118.5 118.5 118.5   0.0
+[8d 3. (B[0;1m(waiting for reply)
+[3d(B[m[8;5H212.1.254.214      [8;57H0.0%     1    4.4   4.4   4.4   4.4   0.0
+[9d 4. (B[0;1m(waiting for reply)
+[3d(B[m[8;5Hmsk-b26-b36.ti.ru
+[3d[9;5H212.1.242.54 [6b[9;57H0.0%     1    4.3   4.3   4.3   4.3   0.0
+[10d 5. (B[0;1m(waiting for reply)
+[3d(B[m[10;5H212.1.251.195      [10;57H0.0%     1    4.8   4.8   4.8   4.8   0.0
+[11d 6. (B[0;1m(waiting for reply)
+[3d(B[m[11;5H178.176.150.27     [11;57H0.0%     1    5.2   5.2   5.2   5.2   0.0
+[12d 7. (B[0;1m(waiting for reply)
+[3d(B[m[12;5H8.8.4.4 [11b[12;57H0.0%     1   19.9  19.9  19.9  19.9   0.0
+[3d[12;5Hdns.google
+[3d[6;66H2[73G5[6;85H5[97G1
+[3d[2;92H5[7;66H2
+[3d[7;70H48.2 133.3[7;88H48.2  21[8;66H2
+[3d[8;71H3.4   3.9   3[97G7
+[3d[9;66H2[73G1   4.2   4.1[97G1
+[3d[10;66H2[73G9[91G9   0.1
+[3d[11;66H2   10.6   7.9[11;88H10.6   3.8
+[3d[12;66H2[73G8  19.8  19.8[97G1
+[3d[6;66H3[73G6
+[3d[2;92H6[7;66H3
+[3d[7;71H6.9 137.8[94G16.8[8;66H3
+[3d[8;73H8   3.8[97G5
+[3d[9;66H3    3.8   4.1   3.8[97G2
+[3d[10;66H3    5.3   5.0[10;89H5.3   0.3
+[3d[11;66H3    4.9   6.9   4.9[97G2
+[3d[12;66H3[73G9  19.9
+[3d[6;66H4[73G5
+[3d[7;66H4   39.5 113.3  39[94G51.0
+[3d[2;92H7
+[3d[8;66H4[97G4
+[3d[9;66H4    4.0
+[3d[10;66H4[73G1[97G2
+[3d[11;66H4[73G6   6.3   4.6[95G2.9
+[3d[12;66H4   20.2  20.0[12;88H20.2   0.2
+[3d[6;66H5[73G7[91G7
+[3d[7;66H5   35.1  97.6  35.1[95G6.4
+[3d[2;92H8
+[3d[8;66H5[73G7
+[3d[9;66H5    7.7   4.8[9;89H7.7   1.6
+[3d[10;66H5    3.9   4.8   3.9[97G5
+[3d[11;66H5[73G9   6.0[97G5
+[3d[12;66H5   19.6  19.9  19.6
+[3d[6;66H6[73G8[91G8
+[3d[2;92H9[7;66H6  104.0  98.7[95G0.5
+[3d[8;66H6[73G4   3.7
+[3d[9;66H6   84.4  18.1[9;88H84.4  32.5
+[3d[10;66H6    4.2   4.7
+[3d[11;66H6   10.6   6.8[95G3.0
+[3d[12;66H6   20.0
+[3d[6;66H7[73G7
+[3d[2;88H30:00[7;66H7
+[3d[7;70H48.1 105[94G49.7[8;66H7
+[3d[8;73H6[97G3
+[3d[9;66H7   14.5  17.6[94G29.7
+[3d[10;66H7[73G7
+[3d[11;66H7    4.8   6.5[95G2.8
+[3d[12;66H7   19.7
+[3d[6;66H8[73G6
+[3d[7;66H8   24.0  95.5  24.0[94G54.4
+[3d[2;92H1
+[3d[8;66H8   15.9   5.2[8;88H15.9   4
+[3d[9;66H8   12.9  17.0[95G7.6
+[3d[10;66H8[73G9[97G4
+[3d[11;66H8    5.0   6.3[97G6
+[3d[12;66H8[73G6  19.8
+[3d[6;66H9
+[3d[2;92H2[7;66H9  135.1  99.9[95G2.5
+[3d[8;66H9    3.2   5.0   3.2[97G1
+[3d[9;66H9    4.2  15.5[95G6.2
+[3d[10;66H9    9.9   5.3[10;89H9.9   1.8
+[3d[11;66H9    4.8   6.2[97G5
+[3d[12;66H9[73G8
+[3d[6;65H10
+[3d[2;92H3[7;65H10   32.0  93.1[95G4.0
+[3d[8;65H10[73G8   4.9[95G3.9
+[3d[9;65H10   11.1  15.1[95G4.7
+[3d[10;65H10    4.3   5.2[97G7
+[3d[11;65H10    7.1[97G4
+[3d[12;65H10[73G7
+[3d[6;66H1
+[3d[7;66H1   37.4  88[95G3.9
+[3d[2;92H4
+[3d[8;66H1    8.1   5.2[97G8
+[3d[9;66H1    3.9  14[95G3
+[3d[10;66H1    3.9   5.1
+[3d[11;66H1    4.5   6.1   4.5[97G3
+[3d[12;66H1[73G3[12;85H3
+[3d[6;66H2[73G5
+[3d[2;92H5[7;66H2
+[3d[7;69H145.8  92.9[95G4.0[8;66H2
+[3d[8;71H3.3   5.0[97G7
+[3d[25;1H[?1049l[23;0;0t
+[?1l>[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7m ip a[27m  ip a
+[?2004l
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:cd:f9:82:e7:fc brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 100 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 84276sec preferred_lft 84276sec
+    inet6 fe80::cd:f9ff:fe82:e7fc/64 scope link 
+       valid_lft forever preferred_lft forever
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether e6:8b:a4:a4:c8:f7 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::e48b:a4ff:fea4:c8f7/64 scope link 
+       valid_lft forever preferred_lft forever
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mnslookup –type=MX google.com[27m 
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnslookup –type=MX google.com
+[?2004l
+nslookup: '–type=MX' is not a legal IDNA2008 name (A-label roundtrip failed), use +noidnin
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ nslookup –type=MX google.com[1P[1@-
+[?2004l
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+google.com	mail exchanger = 10 smtp.google.com.
+
+Authoritative answers can be found from:
+
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mnmap -p22,80,443 localhost[27m 
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnmap -p22,80,443 localhost
+[?2004l
+Command 'nmap' not found, but can be installed with:
+snap install nmap  # version 7.95, or
+apt  install nmap  # version 7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1
+See 'snap info nmap' for additional versions.
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo [7mapt  install nmap[27m apt  install nmap
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+The following additional packages will be installed:
+  libblas3 liblinear4 liblua5.3-0 lua-lpeg nmap-common
+Suggested packages:
+  liblinear-tools liblinear-dev ncat ndiff zenmap
+The following NEW packages will be installed:
+  libblas3 liblinear4 liblua5.3-0 lua-lpeg nmap nmap-common
+0 upgraded, 6 newly installed, 0 to remove and 25 not upgraded.
+Need to get 6113 kB of archives.
+After this operation, 26.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+[33m
+0% [Working][0m
+            
+Get:1 http://mirror.yandex.ru/ubuntu jammy-updates/universe amd64 nmap-common all 7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1 [3940 kB]
+[33m
+0% [Connected to mirror.yandex.ru (213.180.204.183)] [1 nmap-common 11.9 kB/3940 kB 0%][0m
+                                                                                       
+Get:2 https://mirror.yandex.ru/ubuntu jammy/main amd64 libblas3 amd64 3.10.0-2ubuntu1 [228 kB]
+[33m
+                                                                                       
+4% [2 libblas3 32.4 kB/228 kB 14%] [1 nmap-common 286 kB/3940 kB 7%][0m[33m
+                                                                    
+17% [1 nmap-common 827 kB/3940 kB 21%][0m
+                                      
+Get:3 https://mirror.yandex.ru/ubuntu jammy/universe amd64 liblinear4 amd64 2.3.0+dfsg-5 [41.4 kB]
+[33m
+26% [3 liblinear4 16.1 kB/41.4 kB 39%] [1 nmap-common 1487 kB/3940 kB 38%][0m[33m
+                                                                          
+30% [Waiting for headers] [1 nmap-common 1515 kB/3940 kB 38%][0m
+                                                             
+Get:4 https://mirror.yandex.ru/ubuntu jammy/main amd64 liblua5.3-0 amd64 5.3.6-1build1 [140 kB]
+[33m
+33% [4 liblua5.3-0 16.1 kB/140 kB 11%] [1 nmap-common 1747 kB/3940 kB 44%][0m
+                                                                          
+Get:5 https://mirror.yandex.ru/ubuntu jammy/universe amd64 lua-lpeg amd64 1.0.2-1 [31.4 kB]
+[33m
+                                                                          
+39% [5 lua-lpeg 31.4 kB/31.4 kB 100%] [1 nmap-common 1808 kB/3940 kB 46%][0m[33m
+                                                                         
+43% [1 nmap-common 1808 kB/3940 kB 46%][0m[33m
+                                       
+74% [Working][0m
+             
+Get:6 http://mirror.yandex.ru/ubuntu jammy-updates/universe amd64 nmap amd64 7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1 [1731 kB]
+[33m
+74% [6 nmap 0 B/1731 kB 0%][0m[33m
+                           
+100% [Working][0m
+              
+Fetched 6113 kB in 1s (6942 kB/s)
+
+7[0;24r8[1ASelecting previously unselected package libblas3:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 94024 files and directories currently installed.)
+Preparing to unpack .../0-libblas3_3.10.0-2ubuntu1_amd64.deb ...
+7[25;0f[42m[30mProgress: [  0%][49m[39m [............................................................................] 87[25;0f[42m[30mProgress: [  4%][49m[39m [###.........................................................................] 8Unpacking libblas3:amd64 (3.10.0-2ubuntu1) ...
+7[25;0f[42m[30mProgress: [  8%][49m[39m [######......................................................................] 8Selecting previously unselected package liblinear4:amd64.
+Preparing to unpack .../1-liblinear4_2.3.0+dfsg-5_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 12%][49m[39m [#########...................................................................] 8Unpacking liblinear4:amd64 (2.3.0+dfsg-5) ...
+7[25;0f[42m[30mProgress: [ 16%][49m[39m [############................................................................] 8Selecting previously unselected package liblua5.3-0:amd64.
+Preparing to unpack .../2-liblua5.3-0_5.3.6-1build1_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 20%][49m[39m [###############.............................................................] 8Unpacking liblua5.3-0:amd64 (5.3.6-1build1) ...
+7[25;0f[42m[30mProgress: [ 24%][49m[39m [##################..........................................................] 8Selecting previously unselected package lua-lpeg:amd64.
+Preparing to unpack .../3-lua-lpeg_1.0.2-1_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 28%][49m[39m [#####################.......................................................] 8Unpacking lua-lpeg:amd64 (1.0.2-1) ...
+7[25;0f[42m[30mProgress: [ 32%][49m[39m [########################....................................................] 8Selecting previously unselected package nmap-common.
+Preparing to unpack .../4-nmap-common_7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1_all.deb ...
+7[25;0f[42m[30mProgress: [ 36%][49m[39m [###########################.................................................] 8Unpacking nmap-common (7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1) ...
+7[25;0f[42m[30mProgress: [ 40%][49m[39m [##############################..............................................] 8Selecting previously unselected package nmap.
+Preparing to unpack .../5-nmap_7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 44%][49m[39m [#################################...........................................] 8Unpacking nmap (7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1) ...
+7[25;0f[42m[30mProgress: [ 48%][49m[39m [####################################........................................] 8Setting up lua-lpeg:amd64 (1.0.2-1) ...
+7[25;0f[42m[30mProgress: [ 52%][49m[39m [#######################################.....................................] 87[25;0f[42m[30mProgress: [ 56%][49m[39m [##########################################..................................] 8Setting up libblas3:amd64 (3.10.0-2ubuntu1) ...
+7[25;0f[42m[30mProgress: [ 60%][49m[39m [#############################################...............................] 8update-alternatives: using /usr/lib/x86_64-linux-gnu/blas/libblas.so.3 to provide /usr/lib/x86_64-linux-gnu/libblas.so.3 (libblas.so.3-x86_64-linux-gnu) in auto mode
+7[25;0f[42m[30mProgress: [ 64%][49m[39m [################################################............................] 8Setting up nmap-common (7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1) ...
+7[25;0f[42m[30mProgress: [ 68%][49m[39m [###################################################.........................] 87[25;0f[42m[30mProgress: [ 72%][49m[39m [######################################################......................] 8Setting up liblua5.3-0:amd64 (5.3.6-1build1) ...
+7[25;0f[42m[30mProgress: [ 76%][49m[39m [#########################################################...................] 87[25;0f[42m[30mProgress: [ 80%][49m[39m [############################################################................] 8Setting up liblinear4:amd64 (2.3.0+dfsg-5) ...
+7[25;0f[42m[30mProgress: [ 84%][49m[39m [###############################################################.............] 87[25;0f[42m[30mProgress: [ 88%][49m[39m [##################################################################..........] 8Setting up nmap (7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1) ...
+7[25;0f[42m[30mProgress: [ 92%][49m[39m [#####################################################################.......] 87[25;0f[42m[30mProgress: [ 96%][49m[39m [########################################################################....] 8Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.9) ...
+
+7[0;25r8[1A[JScanning processes... [                                                                          ]
+Scanning processes... [                                                                          ]
+Scanning processes... [=                                                                         ]
+Scanning processes... [==                                                                        ]
+Scanning processes... [==                                                                        ]
+Scanning processes... [===                                                                       ]
+Scanning processes... [====                                                                      ]
+Scanning processes... [====                                                                      ]
+Scanning processes... [=====                                                                     ]
+Scanning processes... [======                                                                    ]
+Scanning processes... [======                                                                    ]
+Scanning processes... [=======                                                                   ]
+Scanning processes... [========                                                                  ]
+Scanning processes... [========                                                                  ]
+Scanning processes... [=========                                                                 ]
+Scanning processes... [==========                                                                ]
+Scanning processes... [==========                                                                ]
+Scanning processes... [===========                                                               ]
+Scanning processes... [============                                                              ]
+Scanning processes... [============                                                              ]
+Scanning processes... [=============                                                             ]
+Scanning processes... [==============                                                            ]
+Scanning processes... [==============                                                            ]
+Scanning processes... [===============                                                           ]
+Scanning processes... [================                                                          ]
+Scanning processes... [================                                                          ]
+Scanning processes... [=================                                                         ]
+Scanning processes... [==================                                                        ]
+Scanning processes... [==================                                                        ]
+Scanning processes... [===================                                                       ]
+Scanning processes... [====================                                                      ]
+Scanning processes... [====================                                                      ]
+Scanning processes... [=====================                                                     ]
+Scanning processes... [======================                                                    ]
+Scanning processes... [======================                                                    ]
+Scanning processes... [=======================                                                   ]
+Scanning processes... [========================                                                  ]
+Scanning processes... [========================                                                  ]
+Scanning processes... [=========================                                                 ]
+Scanning processes... [==========================                                                ]
+Scanning processes... [==========================                                                ]
+Scanning processes... [===========================                                               ]
+Scanning processes... [============================                                              ]
+Scanning processes... [============================                                              ]
+Scanning processes... [=============================                                             ]
+Scanning processes... [==============================                                            ]
+Scanning processes... [==============================                                            ]
+Scanning processes... [===============================                                           ]
+Scanning processes... [================================                                          ]
+Scanning processes... [================================                                          ]
+Scanning processes... [=================================                                         ]
+Scanning processes... [==================================                                        ]
+Scanning processes... [==================================                                        ]
+Scanning processes... [===================================                                       ]
+Scanning processes... [====================================                                      ]
+Scanning processes... [=====================================                                     ]
+Scanning processes... [=====================================                                     ]
+Scanning processes... [======================================                                    ]
+Scanning processes... [=======================================                                   ]
+Scanning processes... [=======================================                                   ]
+Scanning processes... [========================================                                  ]
+Scanning processes... [=========================================                                 ]
+Scanning processes... [=========================================                                 ]
+Scanning processes... [==========================================                                ]
+Scanning processes... [===========================================                               ]
+Scanning processes... [===========================================                               ]
+Scanning processes... [============================================                              ]
+Scanning processes... [=============================================                             ]
+Scanning processes... [=============================================                             ]
+Scanning processes... [==============================================                            ]
+Scanning processes... [===============================================                           ]
+Scanning processes... [===============================================                           ]
+Scanning processes... [================================================                          ]
+Scanning processes... [=================================================                         ]
+Scanning processes... [=================================================                         ]
+Scanning processes... [==================================================                        ]
+Scanning processes... [===================================================                       ]
+Scanning processes... [===================================================                       ]
+Scanning processes... [====================================================                      ]
+Scanning processes... [=====================================================                     ]
+Scanning processes... [=====================================================                     ]
+Scanning processes... [======================================================                    ]
+Scanning processes... [=======================================================                   ]
+Scanning processes... [=======================================================                   ]
+Scanning processes... [========================================================                  ]
+Scanning processes... [=========================================================                 ]
+Scanning processes... [=========================================================                 ]
+Scanning processes... [==========================================================                ]
+Scanning processes... [===========================================================               ]
+Scanning processes... [===========================================================               ]
+Scanning processes... [============================================================              ]
+Scanning processes... [=============================================================             ]
+Scanning processes... [=============================================================             ]
+Scanning processes... [==============================================================            ]
+Scanning processes... [===============================================================           ]
+Scanning processes... [===============================================================           ]
+Scanning processes... [================================================================          ]
+Scanning processes... [=================================================================         ]
+Scanning processes... [=================================================================         ]
+Scanning processes... [==================================================================        ]
+Scanning processes... [===================================================================       ]
+Scanning processes... [===================================================================       ]
+Scanning processes... [====================================================================      ]
+Scanning processes... [=====================================================================     ]
+Scanning processes... [=====================================================================     ]
+Scanning processes... [======================================================================    ]
+Scanning processes... [=======================================================================   ]
+Scanning processes... [=======================================================================   ]
+Scanning processes... [========================================================================  ]
+Scanning processes... [========================================================================= ]
+Scanning processes... [==========================================================================]
+Scanning processes...                                                                             
+Scanning linux images... [                                                                       ]
+Scanning linux images... [=================                                                      ]
+Scanning linux images... [===================================                                    ]
+Scanning linux images... [=====================================================                  ]
+Scanning linux images... [=======================================================================]
+Scanning linux images...                                                                          
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mnmap -p22,80,443 localhost[27m 
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnmap -p22,80,443 localhost
+[?2004l
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-04-09 22:51 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0014s latency).
+
+PORT    STATE  SERVICE
+22/tcp  open   ssh
+80/tcp  closed http
+443/tcp closed https
+
+Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mdig @8.8.8.8 google.com[27m dig @8.8.8.8 google.com
+[?2004l
+; <<>> DiG 9.18.30-0ubuntu0.22.04.2-Ubuntu <<>> @8.8.8.8 google.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 27654
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;google.com.			IN	A
+
+;; ANSWER SECTION:
+google.com.		300	IN	A	216.58.211.238
+
+;; Query time: 24 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Wed Apr 09 22:51:18 UTC 2025
+;; MSG SIZE  rcvd: 55
+
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo tcpdump > tcp.dump[27m sudo tcpdump > tcp.dump
+[?2004l
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp0s3, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+^C
+1 packet captured
+18 packets received by filter
+0 packets dropped by kernel
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo systemctl is-active ssh[27m 
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl is-active ssh
+[?2004l
+active
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo systemctl enable --now ssh[27m 
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl enable --now ssh
+[?2004l
+Synchronizing state of ssh.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable ssh
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo su ubuntu
+[?2004l
+su: Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ whoami
+[?2004l
+vagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo -iu ubuntu[27m sudo -iu ubuntu
+[?2004l
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ su ubuntu
+[?2004l
+su: Permission denied
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ [7mid ubuntu[27m id ubuntu
+[?2004l
+uid=1001(ubuntu) gid=1001(ubuntu) groups=1001(ubuntu),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),119(netdev),120(lxd)
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ [7mgroups vagrant[27m groups vagrant
+[?2004l
+vagrant : vagrant
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo usermod -aG sudo vagrant[27m 
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo usermod -aG sudo vagrant
+[?2004l
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ sudo usermod -aG sudo vagrant
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pgroups[C[C[C[C[C[C[C[C
+[?2004l
+vagrant : vagrant sudo
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ groups vagrant[15@sudo usermod -aG sudo[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pgroups[C[C[C[C[C[C[C[C[5Pid ubuntusu[C[C[C[C[C[C[C  d ubuntuo ubuntu[C ubuntus ubuntuu ubuntu
+[?2004l
+su: Permission denied
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ su ubuntu
+[?2004l
+su: Permission denied
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ ls
+[?2004l
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ whoami
+[?2004l
+ubuntu
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ cd [K[K[Kpwd
+[?2004l
+/home/ubuntu
+[?2004h]0;ubuntu@ubuntu-jammy: ~ [01;32mubuntu@ubuntu-jammy[00m:[01;34m~[00m$ cd [7m/home/ubuntu/.ssh[27m /home/ubuntu/.ssh
+[?2004l
+[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ vim[K[K[Knano [7mauthorized_keys[27m authorized_keys
+[?2004l
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ Reading... ](B[m[22;34H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 6.2                      authorized_keys                                [1;82H(B[m
+[23d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location
+[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line
+[2d[?12l[?25h[?25l[22d[K[1;53H(B[0;7m*[82G(B[m
+[2db3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABDctF6xSn
+[3dTqfksOOff632JjAAAAGAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAILl39HMHReEVJyVQ
+[4djcM8cCxxBbIs6K/kAaR1/OVMgVgQAAAAoJKzc0ScKoedCL/YXI6raN/VQyf61yoas4mAWR
+[5dBr762InkZl6D76wG1Upyu50ybfGmV4XI0XRtmVF/mN+0qgAwNHuJLra71lPamHrD+aBOY5
+[6d0ZVHZzLxSBauPqZEiwGIkdg0JyYmX+x8P7sGCodipGA6PKj4uHHWBbZScWaEtz4CxoQCzm
+[7dEfNao3ItyCSo4YvYnCjOzWwmv2kw5Vro54pnA=[?12l[?25h[?25l
+[8d[?12l[?25h[?25l[7;39H[?12l[?25h[?25l
+[22d(B[0;7mSave modified buffer?                                                              [23;1H Y(B[m Yes[K
+[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;23H[?12l[?25h[?25l
+[23d(B[0;7m^G(B[m Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File
+[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m Browse
+[22d(B[0;7mFile Name to Write: authorized_keys(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;53H(B[0;7m [82G(B[m[22;34H(B[0;7m[ Wrote 6 lines ](B[m
+[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ cat authorized_keys
+[?2004l
+b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABDctF6xSn
+TqfksOOff632JjAAAAGAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAILl39HMHReEVJyVQ
+jcM8cCxxBbIs6K/kAaR1/OVMgVgQAAAAoJKzc0ScKoedCL/YXI6raN/VQyf61yoas4mAWR
+Br762InkZl6D76wG1Upyu50ybfGmV4XI0XRtmVF/mN+0qgAwNHuJLra71lPamHrD+aBOY5
+0ZVHZzLxSBauPqZEiwGIkdg0JyYmX+x8P7sGCodipGA6PKj4uHHWBbZScWaEtz4CxoQCzm
+EfNao3ItyCSo4YvYnCjOzWwmv2kw5Vro54pnA=
+[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ [7msudo cp -v /etc/ssh/sshd_config /etc/ssh/sshd_config.ba[27m[7mk[27m[7m_$(date +%Y%m%d_%H%M%S)[27m [A
+]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ sudo cp -v /etc/ssh/sshd_config /etc/ssh/sshd_config.bak_$(date +%Y%m%d_%H%M%S)
+[?2004l
+'/etc/ssh/sshd_config' -> '/etc/ssh/sshd_config.bak_20250409_230227'
+[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ [7mls -l /etc/ssh/sshd_config*[27m ls -l /etc/ssh/sshd_config*
+[?2004l
+-rw-r--r-- 1 root root 3254 Feb 11 13:51 /etc/ssh/sshd_config
+-rw-r--r-- 1 root root 3254 Apr  9 23:02 /etc/ssh/sshd_config.bak_20250409_230227
+
+/etc/ssh/sshd_config.d:
+total 4
+-rw-r--r-- 1 root root 26 Mar 27 10:51 60-cloudimg-settings.conf
+[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ sudo vim /etc/ssh/sshd_config
+[?2004l
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"/etc/ssh/sshd_config" 122L, 3254B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;? ]11;? [2;1H[34m# This is the sshd server system-wide configuration file.  See[m[2;63H[K[3;1H[34m# sshd_config(5) for more information.[m[3;39H[K[5;1H[34m# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bii[6;1Hn:/sbin:/bin:/usr/games
+
+# The strategy used for options in the default sshd_config shipped with
+# OpenSSH is to specify options with their default value where
+# possible, but leave them commented.  Uncommented options override the
+# default value.[m
+
+[38;5;130mInclude[m /etc/ssh/sshd_config.d/[35m*[m.conf
+
+[34m#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+
+#HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_ecdsa_key
+#HostKey /etc/ssh/ssh_host_ed25519_key[m[24;66H1,0-1[9CTop[1;1H[?25h[?12$p[?25l[24;56H/[1;1H[24;57H0[1;1H[24;58Hc[1;1H[24;59H0[1;1H[24;60Hc[1;1H[24;61H/[1;1H[24;62H0[1;1H[24;63Hc[1;1H[24;64H0[1;1H[24;65Hc[1;1H[24;56H          [1;1H[27m[23m[29m[m[H[2J[2;1H[96m# This is the sshd server system-wide configuration file.  See
+# sshd_config(5) for more information.
+
+# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bii[6;1Hn:/sbin:/bin:/usr/games
+
+# The strategy used for options in the default sshd_config shipped with
+# OpenSSH is to specify options with their default value where
+# possible, but leave them commented.  Uncommented options override the
+# default value.[m
+
+[93mInclude[m /etc/ssh/sshd_config.d/[38;5;224m*[m.conf
+
+[96m#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+
+#HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_ecdsa_key
+#HostKey /etc/ssh/ssh_host_ed25519_key[m[24;66H1,0-1[9CTop
+"/etc/ssh/sshd_config" 122L, 3254B[1;1H[?25h[?25l[24;56Ha[1;1H[24;56H [1;1H[24;1H[1m-- INSERT --[m[24;13H[K[24;66H1,1[11CTop[1;1H[?25h[?25l[24;66H2[2;1H[?25h[?25l[24;66H3[3;1H[?25h[?25l[24;66H4[4;1H[?25h[?25l[24;66H5[5;1H[?25h[?25l[24;66H6[7;1H[?25h[?25l[24;66H7[8;1H[?25h[?25l[24;66H8[9;1H[?25h[?25l[24;66H9[10;1H[?25h[?25l[24;66H10,1[11;1H[?25h[?25l[24;67H1[12;1H[?25h[?25l[24;67H2[13;1H[?25h[?25l[24;67H3[14;1H[?25h[?25l[24;67H4[15;1H[?25h[?25l[24;67H5[16;1H[?25h[?25l[24;67H6[17;1H[?25h[?25l[24;67H7[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Ciphers and keying[m[24;66H[K[24;66H18,1[11C1%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#RekeyLimit default none[m[24;66H[K[24;66H19,1[11C2%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H20,1[11C3%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Logging[m[24;66H[K[24;66H21,1[11C4%[18;1H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[96m#SyslogFacility AUTH
+#LogLevel INFO[m[24;66H[K[24;66H22,1[11C5%[17;1H[?25h[?25l[24;67H3[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H24,1[11C6%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Authentication:[m[24;66H[K[24;66H25,1[11C7%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H26,1[11C8%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#LoginGraceTime 2m[m[24;66H[K[24;66H27,1[11C9%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitRootLogin prohibit-password[m[24;66H[K[24;66H28,1[10C10%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#StrictModes yes[m[24;66H[K[24;66H29,1[10C11%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#MaxAuthTries 6[m[24;66H[K[24;66H30,1[10C12%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#MaxSessions 10[m[24;66H[K[24;66H31,1[10C13%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H32,1[10C14%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PubkeyAuthentication yes[m[24;66H[K[24;66H33,1[10C15%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H34,1[10C16%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H35,1[10C17%[18;1H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[96m#AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2[m[24;66H[K[24;66H37,1[10C19%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedPrincipalsFile none[m[24;66H[K[24;66H38,1[10C20%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H39,1[10C21%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedKeysCommand none[m[24;66H[K[24;66H40,1[10C22%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedKeysCommandUser nobody[m[24;66H[K[24;66H41,1[10C23%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H42,1[10C24%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts[m[24;66H[K[24;66H43,1[10C25%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#HostbasedAuthentication no[m[24;66H[K[24;66H44,1[10C26%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes if you don't trust ~/.ssh/known_hosts for[m[24;66H[K[24;66H45,1[10C27%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# HostbasedAuthentication[m[24;66H[K[24;66H46,1[10C28%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#IgnoreUserKnownHosts no[m[24;66H[K[24;66H47,1[10C29%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Don't read the user's ~/.rhosts and ~/.shosts files[m[24;66H[K[24;66H48,1[10C30%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#IgnoreRhosts yes[m[24;66H[K[24;66H49,1[10C31%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H50,1[10C32%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# To disable tunneled clear text passwords, change to no here![m[24;66H[K[24;66H51,1[10C33%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PasswordAuthentication yes[m[24;66H[K[24;66H52,1[10C34%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitEmptyPasswords no[m[24;66H[K[24;66H53,1[10C35%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H54,1[10C36%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H55,1[10C37%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H56,1[10C38%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H57,1[10C39%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H58,1[10C40%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Kerberos options[m[24;66H[K[24;66H59,1[10C41%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosAuthentication no[m[24;66H[K[24;66H60,1[10C42%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosOrLocalPasswd yes[m[24;66H[K[24;66H61,1[10C43%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosTicketCleanup yes[m[24;66H[K[24;66H62,1[10C44%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosGetAFSToken no[m[24;66H[K[24;66H63,1[10C45%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H64,1[10C46%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# GSSAPI options[m[24;66H[K[24;66H65,1[10C47%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIAuthentication no[m[24;66H[K[24;66H66,1[10C48%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPICleanupCredentials yes[m[24;66H[K[24;66H67,1[10C49%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIStrictAcceptorCheck yes[m[24;66H[K[24;66H68,1[10C50%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIKeyExchange no[m[24;66H[K[24;66H69,1[10C51%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H70,1[10C52%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Set this to 'yes' to enable PAM authentication, account processing,[m[24;66H[K[24;66H71,1[10C53%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# and session processing. If this is enabled, PAM authentication will[m[24;66H[K[24;66H72,1[10C54%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# be allowed through the KbdInteractiveAuthentication and[m[24;66H[K[24;66H73,1[10C55%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PasswordAuthentication.  Depending on your PAM configuration,[m[24;66H[K[24;66H74,1[10C56%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PAM authentication via KbdInteractiveAuthentication may bypass[m[24;66H[K[24;66H75,1[10C57%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# the setting of "PermitRootLogin without-password".[m[24;66H[K[24;66H76,1[10C58%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# If you just want the PAM account and session checks to run without[m[24;66H[K[24;66H77,1[10C59%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PAM authentication, then enable this but set PasswordAuthentication[m[24;66H[K[24;66H78,1[10C60%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# and KbdInteractiveAuthentication to 'no'.[m[24;66H[K[24;66H79,1[10C61%[18;1H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[93mUsePAM[m [1m[96myes[m[24;66H[K[24;66H81,1[10C63%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AllowAgentForwarding yes[m[24;66H[K[24;66H82,1[10C64%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AllowTcpForwarding yes[m[24;66H[K[24;66H83,1[10C65%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GatewayPorts no[m[24;66H[K[24;66H84,1[10C66%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mX11Forwarding[m [1m[96myes[m[24;66H[K[24;66H85,1[10C67%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#X11DisplayOffset 10[m[24;66H[K[24;66H86,1[10C68%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#X11UseLocalhost yes[m[24;66H[K[24;66H87,1[10C69%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitTTY yes[m[24;66H[K[24;66H88,1[10C70%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mPrintMotd[m [1m[96mno[m[24;66H[K[24;66H89,1[10C71%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PrintLastLog yes[m[24;66H[K[24;66H90,1[10C72%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#TCPKeepAlive yes[m[24;66H[K[24;66H91,1[10C73%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitUserEnvironment no[m[24;66H[K[24;66H92,1[10C74%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#Compression delayed[m[24;66H[K[24;66H93,1[10C75%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#ClientAliveInterval 0[m[24;66H[K[24;66H94,1[10C76%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#ClientAliveCountMax 3[m[24;66H[K[24;66H95,1[10C77%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#UseDNS no[m[24;66H[K[24;66H96,1[10C78%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PidFile /run/sshd.pid[m[24;66H[K[24;66H97,1[10C79%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#MaxStartups 10:30:100[m[24;66H[K[24;66H98,1[10C80%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitTunnel no[m[24;66H[K[24;66H99,1[10C81%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#ChrootDirectory none[m[24;66H[K[24;66H100,1[9C82%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#VersionAddendum none[m[24;66H[K[24;66H101,1[9C83%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H102,1[9C84%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# no default banner path[m[24;66H[K[24;66H103,1[9C85%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#Banner none[m[24;66H[K[24;66H104,1[9C86%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H105,1[9C87%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Allow client to pass locale environment variables[m[24;66H[K[24;66H106,1[9C88%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mAcceptEnv[m LANG LC_[38;5;224m*[m[24;66H[K[24;66H107,1[9C89%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H108,1[9C90%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# override default of no subsystems[m[24;66H[K[24;66H109,1[9C91%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mSubsystem[m[7Csftp    /usr/lib/openssh/sftp-server[24;66H[K[24;66H110,1[9C92%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H111,1[9C93%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Example of overriding settings on a per-user basis[m[24;66H[K[24;66H112,1[9C94%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#Match User anoncvs[m[24;66H[K[24;66H113,1[9C95%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       X11Forwarding no[m[24;66H[K[24;66H114,1[9C96%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       AllowTcpForwarding no[m[24;66H[K[24;66H115,1[9C97%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       PermitTTY no[m[24;66H[K[24;66H116,1[9C98%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       ForceCommand cvs server[m[24;66H[K[24;66H117,1[9CBot[18;1H[?25h[?25l[24;68H9[20;1H[?25h[?25l[24;67H20[21;1H[?25h[?25l[24;68H1[22;1H[?25h[?25l[24;68H2[23;1H[?25h  [?25l[24;68H1[22;1H[?25h[?25l[24;68H0[21;1H[?25h[?25l[24;67H19[20;1H[?25h[?25l[24;68H8[19;1H[?25h[?25l[24;68H7[18;1H[?25h[?25l[24;68H6[17;1H[?25h[?25l[24;68H5[16;1H[?25h[?25l[24;68H4[15;1H[?25h[?25l[24;68H5[16;1H[?25h[?25l[24;68H6[17;1H[?25h[?25l[24;68H5[16;1H[?25h[?25l[24;68H4[15;1H[?25h[?25l[24;68H3[14;1H[?25h[?25l[24;68H2[13;1H[?25h[?25l[24;68H1[12;1H[?25h[?25l[24;68H0[11;1H[?25h[?25l[24;67H09[10;1H[?25h[?25l[24;68H8[9;1H[?25h[?25l[24;68H7[8;1H[?25h[?25l[24;68H6[7;1H[?25h[?25l[24;68H5[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#ClientAliveInterval 0[m[24;66H[K[24;66H104,1[9C98%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#Compression delayed[m[24;66H[K[24;66H103,1[9C97%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitUserEnvironment no[m[24;66H[K[24;66H102,1[9C96%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#TCPKeepAlive yes[m[24;66H[K[24;66H101,1[9C95%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PrintLastLog yes[m[24;66H[K[24;66H100,1[9C94%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mPrintMotd[m [1m[96mno[m[24;66H[K[24;66H99,1[10C93%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitTTY yes[m[24;66H[K[24;66H98,1[10C92%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#X11UseLocalhost yes[m[24;66H[K[24;66H97,1[10C91%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#X11DisplayOffset 10[m[24;66H[K[24;66H96,1[10C90%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mX11Forwarding[m [1m[96myes[m[24;66H[K[24;66H95,1[10C89%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GatewayPorts no[m[24;66H[K[24;66H94,1[10C88%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AllowTcpForwarding yes[m[24;66H[K[24;66H93,1[10C87%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AllowAgentForwarding yes[m[24;66H[K[24;66H92,1[10C86%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H91,1[10C85%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mUsePAM[m [1m[96myes[m[24;66H[K[24;66H90,1[10C84%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# and KbdInteractiveAuthentication to 'no'.[m[24;66H[K[24;66H89,1[10C83%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# PAM authentication, then enable this but set PasswordAuthentication[m[24;66H[K[24;66H88,1[10C82%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# If you just want the PAM account and session checks to run without[m[24;66H[K[24;66H87,1[10C81%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# the setting of "PermitRootLogin without-password".[m[24;66H[K[24;66H86,1[10C80%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# PAM authentication via KbdInteractiveAuthentication may bypass[m[24;66H[K[24;66H85,1[10C79%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# PasswordAuthentication.  Depending on your PAM configuration,[m[24;66H[K[24;66H84,1[10C78%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# be allowed through the KbdInteractiveAuthentication and[m[24;66H[K[24;66H83,1[10C77%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# and session processing. If this is enabled, PAM authentication will[m[24;66H[K[24;66H82,1[10C76%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Set this to 'yes' to enable PAM authentication, account processing,[m[24;66H[K[24;66H81,1[10C75%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H80,1[10C74%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIKeyExchange no[m[24;66H[K[24;66H79,1[10C73%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIStrictAcceptorCheck yes[m[24;66H[K[24;66H78,1[10C72%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPICleanupCredentials yes[m[24;66H[K[24;66H77,1[10C71%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIAuthentication no[m[24;66H[K[24;66H76,1[10C70%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# GSSAPI options[m[24;66H[K[24;66H75,1[10C69%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H74,1[10C68%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosGetAFSToken no[m[24;66H[K[24;66H73,1[10C67%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosTicketCleanup yes[m[24;66H[K[24;66H72,1[10C66%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosOrLocalPasswd yes[m[24;66H[K[24;66H71,1[10C65%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosAuthentication no[m[24;66H[K[24;66H70,1[10C64%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Kerberos options[m[24;66H[K[24;66H69,1[10C63%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H68,1[10C62%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H67,1[10C61%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H66,1[10C60%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H65,1[10C59%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H64,1[10C58%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitEmptyPasswords no[m[24;66H[K[24;66H63,1[10C57%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PasswordAuthentication yes[m[24;66H[K[24;66H62,1[10C56%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# To disable tunneled clear text passwords, change to no here![m[24;66H[K[24;66H61,1[10C55%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H60,1[10C54%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#IgnoreRhosts yes[m[24;66H[K[24;66H59,1[10C53%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Don't read the user's ~/.rhosts and ~/.shosts files[m[24;66H[K[24;66H58,1[10C52%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#IgnoreUserKnownHosts no[m[24;66H[K[24;66H57,1[10C51%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# HostbasedAuthentication[m[24;66H[K[24;66H56,1[10C50%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Change to yes if you don't trust ~/.ssh/known_hosts for[m[24;66H[K[24;66H55,1[10C49%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostbasedAuthentication no[m[24;66H[K[24;66H54,1[10C48%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts[m[24;66H[K[24;66H53,1[10C47%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H52,1[10C46%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysCommandUser nobody[m[24;66H[K[24;66H51,1[10C45%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysCommand none[m[24;66H[K[24;66H50,1[10C44%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H49,1[10C43%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedPrincipalsFile none[m[24;66H[K[24;66H48,1[10C42%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H47,1[10C41%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2[m[24;66H[K[24;66H46,1[10C40%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H45,1[10C39%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H44,1[10C38%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PubkeyAuthentication yes[m[24;66H[K[24;66H43,1[10C37%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H42,1[10C36%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#MaxSessions 10[m[24;66H[K[24;66H41,1[10C35%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#MaxAuthTries 6[m[24;66H[K[24;66H40,1[10C34%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#StrictModes yes[m[24;66H[K[24;66H39,1[10C33%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitRootLogin prohibit-password[m[24;66H[K[24;66H38,1[10C32%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#LoginGraceTime 2m[m[24;66H[K[24;66H37,1[10C31%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H36,1[10C30%[6;1H[?25h[?25l[93mMaxSessions[m [95m10[m[6;15H[K[6;1H[?25h[?25l[24;69H2[6;2H[?25h[?25l[24;69H3[6;3H[?25h[?25l[24;69H4[6;4H[?25h[?25l[24;69H5[6;5H[?25h[?25l[24;69H6[6;6H[?25h[?25l[24;69H7[6;7H[?25h[?25l[24;69H8[6;8H[?25h[?25l[24;69H9[6;9H[?25h[?25l[24;69H10[6;10H[?25h[?25l[24;70H1[6;11H[?25h[?25l[24;70H2[6;12H[?25h[?25l[24;70H3[6;13H[?25h[?25l[95m0[m[6;14H[K[6;13H[?25h[?25l[6;13H[K[6;13H[?25h[?25l[95m2[m[24;70H4[6;14H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Authentication:[m[24;66H[K[24;66H35,14[9C29%[6;14H[?25h[?25l[24;70H5[6;15H[?25h[?25l[24;70H6[6;16H[?25h[?25l[6;15H[K[24;70H5[6;15H[?25h[?25l[96m2[m[24;70H6[6;16H[?25h[?25l[24;70H5[6;15H[?25h[?25l[24;70H4[6;14H[?25h[?25l[24;70H3[6;13H[?25h[?25l[24;70H2[6;12H[?25h[?25l[24;70H1[6;11H[?25h[?25l[24;70H0[6;10H[?25h[?25l[24;69H9 [6;9H[?25h[?25l[24;69H8[6;8H[?25h[?25l[24;69H7[6;7H[?25h[?25l[24;69H6[6;6H[?25h[?25l[24;69H5[6;5H[?25h[?25l[24;69H4[6;4H[?25h[?25l[24;69H3[6;3H[?25h[?25l[24;69H2[6;2H[?25h[?25l[93mMaxAuthTries[m [95m2[m[6;15H[K[24;69H1[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H34,1[10C28%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#LogLevel INFO[m[24;66H[K[24;66H33,1[10C27%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#SyslogFacility AUTH[m[24;66H[K[24;66H32,1[10C26%[6;1H[?25h[?25l[24;69H2[6;2H[?25h[?25l[93mLoginGraceTime[m [95m2m[m[6;18H[K[24;69H1[6;1H[?25h[?25l[24;69H2[6;2H[?25h[?25l[24;69H3[6;3H[?25h[?25l[24;69H4[6;4H[?25h[?25l[24;69H5[6;5H[?25h[?25l[24;69H6[6;6H[?25h[?25l[24;69H7[6;7H[?25h[?25l[24;69H8[6;8H[?25h[?25l[24;69H9[6;9H[?25h[?25l[24;69H10[6;10H[?25h[?25l[24;70H1[6;11H[?25h[?25l[24;70H2[6;12H[?25h[?25l[24;70H3[6;13H[?25h[?25l[24;70H4[6;14H[?25h[?25l[24;70H5[6;15H[?25h[?25l[24;70H6[6;16H[?25h[?25l[24;70H7[6;17H[?25h[?25l[24;70H8[6;18H[?25h[?25l[6;17H[K[24;70H7[6;17H[?25h[?25l[6;16H[K[24;70H6[6;16H[?25h[?25l[95m1[m[24;70H7[6;17H[?25h[?25l[95m0[m[24;70H8[6;18H[?25h[?25l[95ms[m[24;70H9[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Logging[m[24;66H[K[24;66H31,1[10C25%[6;1H[?25h[?25l[24;67H2,19[7;19H[?25h[?25l[24;67H1,1 [6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H30,18[9C24%[6;18H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#RekeyLimit default none[m[24;66H[K[24;66H29,1[10C23%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Ciphers and keying[m[24;66H[K[24;66H28,15[9C22%[6;15H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H27,19[9C21%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_ed25519_key[m[24;66H[K[24;66H26,10[9C20%[6;10H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_ecdsa_key[m[24;66H[K[24;66H25,1[10C19%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_rsa_key[m[24;66H[K[24;66H24,19[9C18%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H23,19[9C17%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#ListenAddress ::[m[24;66H[K[24;66H22,1[10C16%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#ListenAddress 0.0.0.0[m[24;66H[K[24;66H21,19[9C15%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AddressFamily any[m[24;66H[K[24;66H20,19[9C14%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#Port 22[m[24;66H[K[24;66H19,19[9C13%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H18,1[10C12%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mInclude[m /etc/ssh/sshd_config.d/[38;5;224m*[m.conf[24;66H[K[24;66H17,18[9C11%[6;18H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H16,19[9C10%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# default value.[m[24;66H[K[24;66H15,19[10C9%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# possible, but leave them commented.  Uncommented options override the[m[24;66H[K[24;66H14,9[11C8%[6;9H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# OpenSSH is to specify options with their default value where[m[24;66H[K[24;66H13,1[11C7%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# The strategy used for options in the default sshd_config shipped with[m[24;66H[K[24;66H12,19[10C6%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H11,1[11C5%[6;1H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;1H[96m# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bii[2;1Hn:/sbin:/bin:/usr/games[m[24;66H[K[24;66H10,17[10C4%[7;17H[?25h[?25l[24;66H9,19 [6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H8,19[11C3%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# sshd_config(5) for more information.[m[24;66H[K[24;66H7,19[11C2%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# This is the sshd server system-wide configuration file.  See[m[24;66H[K[24;66H6,1[12C1%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H5,19[10CTop[5;19H[?25h[?25l[24;66H4,1 [4;1H[?25h[?25l[24;66H3,19[3;19H[?25h[?25l[24;66H4,1 [4;1H[?25h[?25l[24;66H5,19[5;19H[?25h[?25l[24;66H6,1 [7;1H[?25h[?25l[24;66H7,19[8;19H[?25h[?25l[24;66H8[9;19H[?25h[?25l[24;66H9[10;19H[?25h[?25l[24;66H10,17[11;17H[?25h[?25l[24;67H1,1 [12;1H[?25h[?25l[24;67H2,19[13;19H[?25h[?25l[24;67H3,1 [14;1H[?25h[?25l[24;67H4,9[15;9H[?25h[?25l[24;67H5,19[16;19H[?25h[?25l[24;67H6[17;19H[?25h[?25l[24;67H7,18[18;18H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Ciphers and keying[m[24;66H[K[24;66H18,1[11C1%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#RekeyLimit default none[m[24;66H[K[24;66H19,19[10C2%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H20,19[10C3%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Logging[m[24;66H[K[24;66H21,19[10C4%[18;19H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[96m#SyslogFacility AUTH
+#LogLevel INFO[m[24;66H[K[24;66H22,1[11C5%[17;1H[?25h[?25l[24;67H3,19[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H24,19[10C6%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Authentication:[m[24;66H[K[24;66H25,1[11C7%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H26,10[10C8%[18;10H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mLoginGraceTime[m [95m10s[m[24;66H[K[24;66H27,19[10C9%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitRootLogin prohibit-password[m[24;66H[K[24;66H28,15[9C10%[18;15H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#StrictModes yes[m[24;66H[K[24;66H29,1[10C11%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mMaxAuthTries[m [95m2[m[24;66H[K[24;66H30,18[9C12%[18;18H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mMaxSessions[m [95m2[m[24;66H[K[24;66H31,1[10C13%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H32,19[9C14%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PubkeyAuthentication yes[m[24;66H[K[24;66H33,19[9C15%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H34,17[9C16%[18;17H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H35,15[9C17%[18;15H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2[m[24;66H[K[24;66H36,14[9C18%[18;14H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H37,1[10C19%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedPrincipalsFile none[m[24;66H[K[24;66H38,19[9C20%[18;19H[?25h[?25l[24;67H7,1 [17;1H[?25h[?25l[24;67H6,14[16;14H[?25h[?25l[24;67H5,15[15;15H[?25h[?25l[24;67H4,17[14;17H[?25h[?25l[24;67H3,19[13;19H[?25h[?25l[24;67H2[12;19H[?25h[?25l[24;67H1,1 [11;1H[?25h[?25l[24;67H0,18[10;18H[?25h[?25l[24;66H29,1 [9;1H[?25h[?25l[24;67H8,15[8;15H[?25h[?25l[24;67H7,19[7;19H[?25h[?25l[24;67H6,10[6;10H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_ecdsa_key[m[24;66H[K[24;66H25,1[10C19%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_rsa_key[m[24;66H[K[24;66H24,19[9C18%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H23,19[9C17%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#ListenAddress ::[m[24;66H[K[24;66H22,1[10C16%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#ListenAddress 0.0.0.0[m[24;66H[K[24;66H21,19[9C15%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AddressFamily any[m[24;66H[K[24;66H20,19[9C14%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#Port 22[m[24;66H[K[24;66H19,19[9C13%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H18,1[10C12%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mInclude[m /etc/ssh/sshd_config.d/[38;5;224m*[m.conf[24;66H[K[24;66H17,18[9C11%[6;18H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H16,19[9C10%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# default value.[m[24;66H[K[24;66H15,19[10C9%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# possible, but leave them commented.  Uncommented options override the[m[24;66H[K[24;66H14,9[11C8%[6;9H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# OpenSSH is to specify options with their default value where[m[24;66H[K[24;66H13,1[11C7%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# The strategy used for options in the default sshd_config shipped with[m[24;66H[K[24;66H12,19[10C6%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H11,1[11C5%[6;1H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;1H[96m# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bii[2;1Hn:/sbin:/bin:/usr/games[m[24;66H[K[24;66H10,17[10C4%[7;17H[?25h[?25l[24;66H9,19 [6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H8,19[11C3%[6;19H[?25h[?25l[24;66H9[7;19H[?25h[?25l[24;66H10,17[8;17H[?25h[?25l[24;67H1,1 [9;1H[?25h[?25l[24;67H2,19[10;19H[?25h[?25l[24;67H3,1 [11;1H[?25h[?25l[24;67H4,9[12;9H[?25h[?25l[24;67H5,19[13;19H[?25h[?25l[24;67H6[14;19H[?25h[?25l[24;67H7,18[15;18H[?25h[?25l[24;67H8,1 [16;1H[?25h[?25l[24;67H9,19[17;19H[?25h[?25l[24;66H20[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Logging[m[24;66H[K[24;66H21,19[10C4%[18;19H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[96m#SyslogFacility AUTH
+#LogLevel INFO[m[24;66H[K[24;66H22,1[11C5%[17;1H[?25h[?25l[24;67H3,19[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H24,19[10C6%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Authentication:[m[24;66H[K[24;66H25,1[11C7%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H26,10[10C8%[18;10H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mLoginGraceTime[m [95m10s[m[24;66H[K[24;66H27,19[10C9%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitRootLogin prohibit-password[m[24;66H[K[24;66H28,15[9C10%[18;15H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#StrictModes yes[m[24;66H[K[24;66H29,1[10C11%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mMaxAuthTries[m [95m2[m[24;66H[K[24;66H30,18[9C12%[18;18H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mMaxSessions[m [95m2[m[24;66H[K[24;66H31,1[10C13%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H32,19[9C14%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PubkeyAuthentication yes[m[24;66H[K[24;66H33,19[9C15%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H34,17[9C16%[18;17H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H35,15[9C17%[18;15H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2[m[24;66H[K[24;66H36,14[9C18%[18;14H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H37,1[10C19%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedPrincipalsFile none[m[24;66H[K[24;66H38,19[9C20%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H39,1[10C21%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedKeysCommand none[m[24;66H[K[24;66H40,19[9C22%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedKeysCommandUser nobody[m[24;66H[K[24;66H41,19[9C23%[18;19H[?25h[?25l[24;67H0[17;19H[?25h[?25l[24;66H39,1 [16;1H[?25h[?25l[24;67H8,19[15;19H[?25h[?25l[24;70H8[15;18H[?25h[?25l[24;70H7[15;17H[?25h[?25l[24;70H6[15;16H[?25h[?25l[24;70H5[15;15H[?25h[?25l[24;70H4[15;14H[?25h[?25l[24;70H3[15;13H[?25h[?25l[24;70H2[15;12H[?25h[?25l[24;70H1[15;11H[?25h[?25l[24;70H0[15;10H[?25h[?25l[24;69H9 [15;9H[?25h[?25l[24;69H8[15;8H[?25h[?25l[24;69H7[15;7H[?25h[?25l[24;69H6[15;6H[?25h[?25l[24;69H5[15;5H[?25h[?25l[24;69H4[15;4H[?25h[?25l[24;69H3[15;3H[?25h[?25l[24;69H2[15;2H[?25h[?25l[93mPubkeyAuthentication[m [1m[96myes[m[15;25H[K[24;69H1[15;1H[?25h[?25l[24;67H9[16;1H[?25h[?25l[24;66H40[17;1H[?25h[?25l[24;67H1[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H42,1[10C24%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts[m[24;66H[K[24;66H43,1[10C25%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#HostbasedAuthentication no[m[24;66H[K[24;66H44,1[10C26%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes if you don't trust ~/.ssh/known_hosts for[m[24;66H[K[24;66H45,1[10C27%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# HostbasedAuthentication[m[24;66H[K[24;66H46,1[10C28%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#IgnoreUserKnownHosts no[m[24;66H[K[24;66H47,1[10C29%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Don't read the user's ~/.rhosts and ~/.shosts files[m[24;66H[K[24;66H48,1[10C30%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#IgnoreRhosts yes[m[24;66H[K[24;66H49,1[10C31%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H50,1[10C32%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# To disable tunneled clear text passwords, change to no here![m[24;66H[K[24;66H51,1[10C33%[18;1H[?25h[?25l[24;67H0[17;1H[?25h[?25l[24;66H49[16;1H[?25h[?25l[24;67H8[15;1H[?25h[?25l[24;67H7[14;1H[?25h[?25l[24;67H5[12;1H[?25h[?25l[24;67H4[11;1H[?25h[?25l[24;67H3[10;1H[?25h[?25l[24;67H2[9;1H[?25h[?25l[24;67H1[8;1H[?25h[?25l[24;67H0[7;1H[?25h[?25l[24;66H39[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitRootLogin prohibit-password[m[24;66H[K[24;66H38,1[10C32%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mLoginGraceTime[m [95m10s[m[24;66H[K[24;66H37,1[10C31%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H36,1[10C30%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Authentication:[m[24;66H[K[24;66H35,1[10C29%[6;1H[?25h[?25l[24;67H6[7;1H[?25h[?25l[24;67H7[8;1H[?25h[?25l[24;67H8[9;1H[?25h[?25l[24;67H9[10;1H[?25h[?25l[24;66H40[11;1H[?25h[?25l[24;67H1[12;1H[?25h[?25l[24;67H2[13;1H[?25h[?25l[24;67H3[14;1H[?25h[?25l[24;67H4[15;1H[?25h[?25l[24;67H5[16;1H[?25h[?25l[24;67H6[17;1H[?25h[?25l[24;67H7[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Don't read the user's ~/.rhosts and ~/.shosts files[m[24;66H[K[24;66H48,1[10C30%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#IgnoreRhosts yes[m[24;66H[K[24;66H49,1[10C31%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H50,1[10C32%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# To disable tunneled clear text passwords, change to no here![m[24;66H[K[24;66H51,1[10C33%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PasswordAuthentication yes[m[24;66H[K[24;66H52,1[10C34%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitEmptyPasswords no[m[24;66H[K[24;66H53,1[10C35%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H54,1[10C36%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H55,1[10C37%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H56,1[10C38%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H57,1[10C39%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H58,1[10C40%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Kerberos options[m[24;66H[K[24;66H59,1[10C41%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosAuthentication no[m[24;66H[K[24;66H60,1[10C42%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosOrLocalPasswd yes[m[24;66H[K[24;66H61,1[10C43%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosTicketCleanup yes[m[24;66H[K[24;66H62,1[10C44%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosGetAFSToken no[m[24;66H[K[24;66H63,1[10C45%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H64,1[10C46%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# GSSAPI options[m[24;66H[K[24;66H65,1[10C47%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIAuthentication no[m[24;66H[K[24;66H66,1[10C48%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPICleanupCredentials yes[m[24;66H[K[24;66H67,1[10C49%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIStrictAcceptorCheck yes[m[24;66H[K[24;66H68,1[10C50%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIKeyExchange no[m[24;66H[K[24;66H69,1[10C51%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H70,1[10C52%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Set this to 'yes' to enable PAM authentication, account processing,[m[24;66H[K[24;66H71,1[10C53%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# and session processing. If this is enabled, PAM authentication will[m[24;66H[K[24;66H72,1[10C54%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# be allowed through the KbdInteractiveAuthentication and[m[24;66H[K[24;66H73,1[10C55%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PasswordAuthentication.  Depending on your PAM configuration,[m[24;66H[K[24;66H74,1[10C56%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PAM authentication via KbdInteractiveAuthentication may bypass[m[24;66H[K[24;66H75,1[10C57%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# the setting of "PermitRootLogin without-password".[m[24;66H[K[24;66H76,1[10C58%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# If you just want the PAM account and session checks to run without[m[24;66H[K[24;66H77,1[10C59%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PAM authentication, then enable this but set PasswordAuthentication[m[24;66H[K[24;66H78,1[10C60%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# and KbdInteractiveAuthentication to 'no'.[m[24;66H[K[24;66H79,1[10C61%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mUsePAM[m [1m[96myes[m[24;66H[K[24;66H80,1[10C62%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H81,1[10C63%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AllowAgentForwarding yes[m[24;66H[K[24;66H82,1[10C64%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AllowTcpForwarding yes[m[24;66H[K[24;66H83,1[10C65%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GatewayPorts no[m[24;66H[K[24;66H84,1[10C66%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mX11Forwarding[m [1m[96myes[m[24;66H[K[24;66H85,1[10C67%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#X11DisplayOffset 10[m[24;66H[K[24;66H86,1[10C68%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#X11UseLocalhost yes[m[24;66H[K[24;66H87,1[10C69%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitTTY yes[m[24;66H[K[24;66H88,1[10C70%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mPrintMotd[m [1m[96mno[m[24;66H[K[24;66H89,1[10C71%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PrintLastLog yes[m[24;66H[K[24;66H90,1[10C72%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#TCPKeepAlive yes[m[24;66H[K[24;66H91,1[10C73%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitUserEnvironment no[m[24;66H[K[24;66H92,1[10C74%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#Compression delayed[m[24;66H[K[24;66H93,1[10C75%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#ClientAliveInterval 0[m[24;66H[K[24;66H94,1[10C76%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#ClientAliveCountMax 3[m[24;66H[K[24;66H95,1[10C77%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#UseDNS no[m[24;66H[K[24;66H96,1[10C78%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PidFile /run/sshd.pid[m[24;66H[K[24;66H97,1[10C79%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#MaxStartups 10:30:100[m[24;66H[K[24;66H98,1[10C80%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitTunnel no[m[24;66H[K[24;66H99,1[10C81%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#ChrootDirectory none[m[24;66H[K[24;66H100,1[9C82%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#VersionAddendum none[m[24;66H[K[24;66H101,1[9C83%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H102,1[9C84%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# no default banner path[m[24;66H[K[24;66H103,1[9C85%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#Banner none[m[24;66H[K[24;66H104,1[9C86%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H105,1[9C87%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Allow client to pass locale environment variables[m[24;66H[K[24;66H106,1[9C88%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mAcceptEnv[m LANG LC_[38;5;224m*[m[24;66H[K[24;66H107,1[9C89%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H108,1[9C90%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# override default of no subsystems[m[24;66H[K[24;66H109,1[9C91%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mSubsystem[m[7Csftp    /usr/lib/openssh/sftp-server[24;66H[K[24;66H110,1[9C92%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H111,1[9C93%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Example of overriding settings on a per-user basis[m[24;66H[K[24;66H112,1[9C94%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#Match User anoncvs[m[24;66H[K[24;66H113,1[9C95%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       X11Forwarding no[m[24;66H[K[24;66H114,1[9C96%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       AllowTcpForwarding no[m[24;66H[K[24;66H115,1[9C97%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       PermitTTY no[m[24;66H[K[24;66H116,1[9C98%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       ForceCommand cvs server[m[24;66H[K[24;66H117,1[9CBot[18;1H[?25h[?25l[24;68H8[19;1H[?25h[?25l[24;68H9[20;1H[?25h[?25l[24;67H20[21;1H[?25h[?25l[24;68H1[22;1H[?25h[?25l[24;68H2[23;1H[?25h [?25l[24;68H1[22;1H[?25h[?25l[24;68H0[21;1H[?25h[?25l[24;67H19[20;1H[?25h[?25l[24;68H8[19;1H[?25h[?25l[24;68H7[18;1H[?25h[?25l[24;68H6[17;1H[?25h[?25l[24;68H5[16;1H[?25h[?25l[24;68H4[15;1H[?25h[?25l[24;68H3[14;1H[?25h[?25l[24;68H2[13;1H[?25h[?25l[24;68H1[12;1H[?25h[?25l[24;68H0[11;1H[?25h[?25l[24;67H09[10;1H[?25h[?25l[24;68H8[9;1H[?25h[?25l[24;68H7[8;1H[?25h[?25l[24;68H6[7;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#ClientAliveInterval 0[m[24;66H[K[24;66H104,1[9C98%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#Compression delayed[m[24;66H[K[24;66H103,1[9C97%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitUserEnvironment no[m[24;66H[K[24;66H102,1[9C96%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#TCPKeepAlive yes[m[24;66H[K[24;66H101,1[9C95%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PrintLastLog yes[m[24;66H[K[24;66H100,1[9C94%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mPrintMotd[m [1m[96mno[m[24;66H[K[24;66H99,1[10C93%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitTTY yes[m[24;66H[K[24;66H98,1[10C92%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#X11UseLocalhost yes[m[24;66H[K[24;66H97,1[10C91%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#X11DisplayOffset 10[m[24;66H[K[24;66H96,1[10C90%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mX11Forwarding[m [1m[96myes[m[24;66H[K[24;66H95,1[10C89%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GatewayPorts no[m[24;66H[K[24;66H94,1[10C88%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AllowTcpForwarding yes[m[24;66H[K[24;66H93,1[10C87%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AllowAgentForwarding yes[m[24;66H[K[24;66H92,1[10C86%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H91,1[10C85%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mUsePAM[m [1m[96myes[m[24;66H[K[24;66H90,1[10C84%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# and KbdInteractiveAuthentication to 'no'.[m[24;66H[K[24;66H89,1[10C83%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# PAM authentication, then enable this but set PasswordAuthentication[m[24;66H[K[24;66H88,1[10C82%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# If you just want the PAM account and session checks to run without[m[24;66H[K[24;66H87,1[10C81%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# the setting of "PermitRootLogin without-password".[m[24;66H[K[24;66H86,1[10C80%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# PAM authentication via KbdInteractiveAuthentication may bypass[m[24;66H[K[24;66H85,1[10C79%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# PasswordAuthentication.  Depending on your PAM configuration,[m[24;66H[K[24;66H84,1[10C78%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# be allowed through the KbdInteractiveAuthentication and[m[24;66H[K[24;66H83,1[10C77%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# and session processing. If this is enabled, PAM authentication will[m[24;66H[K[24;66H82,1[10C76%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Set this to 'yes' to enable PAM authentication, account processing,[m[24;66H[K[24;66H81,1[10C75%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H80,1[10C74%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIKeyExchange no[m[24;66H[K[24;66H79,1[10C73%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIStrictAcceptorCheck yes[m[24;66H[K[24;66H78,1[10C72%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPICleanupCredentials yes[m[24;66H[K[24;66H77,1[10C71%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIAuthentication no[m[24;66H[K[24;66H76,1[10C70%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# GSSAPI options[m[24;66H[K[24;66H75,1[10C69%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H74,1[10C68%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosGetAFSToken no[m[24;66H[K[24;66H73,1[10C67%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosTicketCleanup yes[m[24;66H[K[24;66H72,1[10C66%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosOrLocalPasswd yes[m[24;66H[K[24;66H71,1[10C65%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosAuthentication no[m[24;66H[K[24;66H70,1[10C64%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Kerberos options[m[24;66H[K[24;66H69,1[10C63%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H68,1[10C62%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H67,1[10C61%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H66,1[10C60%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H65,1[10C59%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H64,1[10C58%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitEmptyPasswords no[m[24;66H[K[24;66H63,1[10C57%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PasswordAuthentication yes[m[24;66H[K[24;66H62,1[10C56%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# To disable tunneled clear text passwords, change to no here![m[24;66H[K[24;66H61,1[10C55%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H60,1[10C54%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#IgnoreRhosts yes[m[24;66H[K[24;66H59,1[10C53%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Don't read the user's ~/.rhosts and ~/.shosts files[m[24;66H[K[24;66H58,1[10C52%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#IgnoreUserKnownHosts no[m[24;66H[K[24;66H57,1[10C51%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# HostbasedAuthentication[m[24;66H[K[24;66H56,1[10C50%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Change to yes if you don't trust ~/.ssh/known_hosts for[m[24;66H[K[24;66H55,1[10C49%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostbasedAuthentication no[m[24;66H[K[24;66H54,1[10C48%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts[m[24;66H[K[24;66H53,1[10C47%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H52,1[10C46%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysCommandUser nobody[m[24;66H[K[24;66H51,1[10C45%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysCommand none[m[24;66H[K[24;66H50,1[10C44%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H49,1[10C43%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedPrincipalsFile none[m[24;66H[K[24;66H48,1[10C42%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H47,1[10C41%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2[m[24;66H[K[24;66H46,1[10C40%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H45,1[10C39%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H44,1[10C38%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mPubkeyAuthentication[m [1m[96myes[m[24;66H[K[24;66H43,1[10C37%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H42,1[10C36%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mMaxSessions[m [95m2[m[24;66H[K[24;66H41,1[10C35%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mMaxAuthTries[m [95m2[m[24;66H[K[24;66H40,1[10C34%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#StrictModes yes[m[24;66H[K[24;66H39,1[10C33%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitRootLogin prohibit-password[m[24;66H[K[24;66H38,1[10C32%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mLoginGraceTime[m [95m10s[m[24;66H[K[24;66H37,1[10C31%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H36,1[10C30%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Authentication:[m[24;66H[K[24;66H35,1[10C29%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H34,1[10C28%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#LogLevel INFO[m[24;66H[K[24;66H33,1[10C27%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#SyslogFacility AUTH[m[24;66H[K[24;66H32,1[10C26%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Logging[m[24;66H[K[24;66H31,1[10C25%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H30,1[10C24%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#RekeyLimit default none[m[24;66H[K[24;66H29,1[10C23%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Ciphers and keying[m[24;66H[K[24;66H28,1[10C22%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H27,1[10C21%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_ed25519_key[m[24;66H[K[24;66H26,1[10C20%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_ecdsa_key[m[24;66H[K[24;66H25,1[10C19%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_rsa_key[m[24;66H[K[24;66H24,1[10C18%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H23,1[10C17%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#ListenAddress ::[m[24;66H[K[24;66H22,1[10C16%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#ListenAddress 0.0.0.0[m[24;66H[K[24;66H21,1[10C15%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AddressFamily any[m[24;66H[K[24;66H20,1[10C14%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#Port 22[m[24;66H[K[24;66H19,1[10C13%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H18,1[10C12%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mInclude[m /etc/ssh/sshd_config.d/[38;5;224m*[m.conf[24;66H[K[24;66H17,1[10C11%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H16,1[10C10%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# default value.[m[24;66H[K[24;66H15,1[11C9%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# possible, but leave them commented.  Uncommented options override the[m[24;66H[K[24;66H14,1[11C8%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# OpenSSH is to specify options with their default value where[m[24;66H[K[24;66H13,1[11C7%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# The strategy used for options in the default sshd_config shipped with[m[24;66H[K[24;66H12,1[11C6%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H11,1[11C5%[6;1H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;1H[96m# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bii[2;1Hn:/sbin:/bin:/usr/games[m[24;66H[K[24;66H10,1[11C4%[7;1H[?25h[?25l[24;67H1[8;1H[?25h[?25l[24;67H2[9;1H[?25h[?25l[24;67H3[10;1H[?25h[?25l[24;67H4[11;1H[?25h[?25l[24;67H5[12;1H[?25h[?25l[24;67H6[13;1H[?25h[?25l[24;67H7[14;1H[?25h[?25l[24;67H8[15;1H[?25h[?25l[24;67H9[16;1H[?25h[?25l[24;66H20[17;1H[?25h[?25l[24;67H1[18;1H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[96m#SyslogFacility AUTH
+#LogLevel INFO[m[24;66H[K[24;66H22,1[11C5%[17;1H[?25h[?25l[24;67H3[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H24,1[11C6%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Authentication:[m[24;66H[K[24;66H25,1[11C7%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H26,1[11C8%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mLoginGraceTime[m [95m10s[m[24;66H[K[24;66H27,1[11C9%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitRootLogin prohibit-password[m[24;66H[K[24;66H28,1[10C10%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#StrictModes yes[m[24;66H[K[24;66H29,1[10C11%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mMaxAuthTries[m [95m2[m[24;66H[K[24;66H30,1[10C12%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mMaxSessions[m [95m2[m[24;66H[K[24;66H31,1[10C13%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H32,1[10C14%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mPubkeyAuthentication[m [1m[96myes[m[24;66H[K[24;66H33,1[10C15%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H34,1[10C16%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H35,1[10C17%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2[m[24;66H[K[24;66H36,1[10C18%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H37,1[10C19%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedPrincipalsFile none[m[24;66H[K[24;66H38,1[10C20%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H39,1[10C21%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedKeysCommand none[m[24;66H[K[24;66H40,1[10C22%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AuthorizedKeysCommandUser nobody[m[24;66H[K[24;66H41,1[10C23%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H42,1[10C24%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts[m[24;66H[K[24;66H43,1[10C25%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#HostbasedAuthentication no[m[24;66H[K[24;66H44,1[10C26%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes if you don't trust ~/.ssh/known_hosts for[m[24;66H[K[24;66H45,1[10C27%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# HostbasedAuthentication[m[24;66H[K[24;66H46,1[10C28%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#IgnoreUserKnownHosts no[m[24;66H[K[24;66H47,1[10C29%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Don't read the user's ~/.rhosts and ~/.shosts files[m[24;66H[K[24;66H48,1[10C30%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#IgnoreRhosts yes[m[24;66H[K[24;66H49,1[10C31%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H50,1[10C32%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# To disable tunneled clear text passwords, change to no here![m[24;66H[K[24;66H51,1[10C33%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PasswordAuthentication yes[m[24;66H[K[24;66H52,1[10C34%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitEmptyPasswords no[m[24;66H[K[24;66H53,1[10C35%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H54,1[10C36%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H55,1[10C37%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H56,1[10C38%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H57,1[10C39%[18;1H[?25h[?25l[93mPasswordAuthentication[m [1m[96myes[m[18;27H[K[18;1H[?25h[?25l[24;69H2[18;2H[?25h[?25l[24;69H3[18;3H[?25h[?25l[24;69H4[18;4H[?25h[?25l[24;69H5[18;5H[?25h[?25l[24;69H6[18;6H[?25h[?25l[24;69H7[18;7H[?25h[?25l[24;69H8[18;8H[?25h[?25l[24;69H9[18;9H[?25h[?25l[24;69H10[18;10H[?25h[?25l[24;70H1[18;11H[?25h[?25l[24;70H2[18;12H[?25h[?25l[24;70H3[18;13H[?25h[?25l[24;70H4[18;14H[?25h[?25l[24;70H5[18;15H[?25h[?25l[24;70H6[18;16H[?25h[?25l[24;70H7[18;17H[?25h[?25l[24;70H8[18;18H[?25h[?25l[24;70H9[18;19H[?25h[?25l[24;69H20[18;20H[?25h[?25l[24;70H1[18;21H[?25h[?25l[24;70H2[18;22H[?25h[?25l[24;70H3[18;23H[?25h[?25l[24;70H4[18;24H[?25h[?25l[24;70H5[18;25H[?25h[?25l[24;70H6[18;26H[?25h[?25l[24;70H7[18;27H[?25h[?25lye[18;26H[K[24;70H6[18;26H[?25h[?25l[18;25H[K[24;70H5[18;25H[?25h[?25l[18;24H[K[24;70H4[18;24H[?25h[?25ln[24;70H5[18;25H[?25h[?25l[1m[96mno[m[24;70H6[18;26H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H58,25[9C40%[18;25H[?25h[?25l[24;70H4[18;24H[?25h[?25l[24;70H3[18;23H[?25h[?25l[24;70H2[18;22H[?25h[?25l[24;70H1[18;21H[?25h[?25l[24;70H0[18;20H[?25h[?25l[24;69H19[18;19H[?25h[?25l[24;70H8[18;18H[?25h[?25l[24;70H7[18;17H[?25h[?25l[24;70H6[18;16H[?25h[?25l[24;70H5[18;15H[?25h[?25l[24;70H4[18;14H[?25h[?25l[24;70H3[18;13H[?25h[?25l[24;70H2[18;12H[?25h[?25l[24;70H1[18;11H[?25h[?25l[24;70H0[18;10H[?25h[?25l[24;69H9 [18;9H[?25h[?25l[24;69H8[18;8H[?25h[?25l[24;69H7[18;7H[?25h[?25l[24;69H6[18;6H[?25h[?25l[24;69H5[18;5H[?25h[?25l[24;69H4[18;4H[?25h[?25l[24;69H3[18;3H[?25h[?25l[24;69H2[18;2H[?25h[?25l[24;67H7[17;2H[?25h[?25l[24;67H5,1[15;1H[?25h[?25l[24;67H4,2[14;2H[?25h[?25l[24;67H3[13;2H[?25h[?25l[24;67H2[12;2H[?25h[?25l[24;67H1[11;2H[?25h[?25l[24;67H0[10;2H[?25h[?25l[24;66H49[9;2H[?25h[?25l[24;67H8[8;2H[?25h[?25l[24;67H7,1[7;1H[?25h[?25l[24;67H8,2[8;2H[?25h[?25l[24;67H9[9;2H[?25h[?25l[93mHostbasedAuthentication[m [1m[96mno[m[9;27H[K[24;69H1[9;1H[?25h[?25l[24;67H8[8;1H[?25h[?25l[24;67H7[7;1H[?25h[?25l[24;67H6[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H45,1[10C39%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H44,1[10C38%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mPubkeyAuthentication[m [1m[96myes[m[24;66H[K[24;66H43,1[10C37%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H42,1[10C36%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mMaxSessions[m [95m2[m[24;66H[K[24;66H41,1[10C35%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mMaxAuthTries[m [95m2[m[24;66H[K[24;66H40,1[10C34%[6;1H[?25h[?25l[24;67H1[7;1H[?25h[?25l[24;67H2[8;1H[?25h[?25l[24;67H3[9;1H[?25h[?25l[24;67H4[10;1H[?25h[?25l[24;67H5[11;1H[?25h[?25l[24;67H6[12;1H[?25h[?25l[24;67H7[13;1H[?25h[?25l[24;67H8[14;1H[?25h[?25l[24;67H9[15;1H[?25h[?25l[24;66H50[16;1H[?25h[?25l[24;67H1[17;1H[?25h[?25l[24;67H2[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitEmptyPasswords no[m[24;66H[K[24;66H53,1[10C35%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H54,1[10C36%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H55,1[10C37%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H56,1[10C38%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H57,1[10C39%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H58,1[10C40%[18;1H[?25h[?25l[24;69H2[18;2H[?25h[?25l[93mPermitEmptyPasswords[m [1m[96mno[m[18;24H[K[24;69H1[18;1H[?25h[?25l[24;67H7[17;1H[?25h[?25l[24;67H6[16;1H[?25h[?25l[24;67H5[15;1H[?25h[?25l[24;67H4[14;1H[?25h[?25l[24;67H3[13;1H[?25h[?25l[24;67H2[12;1H[?25h[?25l[24;67H1[11;1H[?25h[?25l[24;67H0[10;1H[?25h[?25l[24;66H49[9;1H[?25h[?25l[24;67H8[8;1H[?25h[?25l[24;67H7[7;1H[?25h[?25l[24;67H6[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H45,1[10C39%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H44,1[10C38%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mPubkeyAuthentication[m [1m[96myes[m[24;66H[K[24;66H43,1[10C37%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H42,1[10C36%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mMaxSessions[m [95m2[m[24;66H[K[24;66H41,1[10C35%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mMaxAuthTries[m [95m2[m[24;66H[K[24;66H40,1[10C34%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#StrictModes yes[m[24;66H[K[24;66H39,1[10C33%[6;1H[?25h[?25l[24;66H40[7;1H[?25h[?25l[24;67H1[8;1H[?25h[?25l[24;67H2[9;1H[?25h[?25l[24;67H3[10;1H[?25h[?25l[24;67H4[11;1H[?25h[?25l[24;67H5[12;1H[?25h[?25l[24;67H6[13;1H[?25h[?25l[24;67H7[14;1H[?25h[?25l[24;67H8[15;1H[?25h[?25l[24;67H9[16;1H[?25h[?25l[24;66H50[17;1H[?25h[?25l[24;67H1[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mPasswordAuthentication[m [1m[96mno[m[24;66H[K[24;66H52,1[10C34%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mPermitEmptyPasswords[m [1m[96mno[m[24;66H[K[24;66H53,1[10C35%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H54,1[10C36%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H55,1[10C37%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H56,1[10C38%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H57,1[10C39%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H58,1[10C40%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Kerberos options[m[24;66H[K[24;66H59,1[10C41%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosAuthentication no[m[24;66H[K[24;66H60,1[10C42%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosOrLocalPasswd yes[m[24;66H[K[24;66H61,1[10C43%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosTicketCleanup yes[m[24;66H[K[24;66H62,1[10C44%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosGetAFSToken no[m[24;66H[K[24;66H63,1[10C45%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H64,1[10C46%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# GSSAPI options[m[24;66H[K[24;66H65,1[10C47%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIAuthentication no[m[24;66H[K[24;66H66,1[10C48%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPICleanupCredentials yes[m[24;66H[K[24;66H67,1[10C49%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIStrictAcceptorCheck yes[m[24;66H[K[24;66H68,1[10C50%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIKeyExchange no[m[24;66H[K[24;66H69,1[10C51%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H70,1[10C52%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Set this to 'yes' to enable PAM authentication, account processing,[m[24;66H[K[24;66H71,1[10C53%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# and session processing. If this is enabled, PAM authentication will[m[24;66H[K[24;66H72,1[10C54%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# be allowed through the KbdInteractiveAuthentication and[m[24;66H[K[24;66H73,1[10C55%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PasswordAuthentication.  Depending on your PAM configuration,[m[24;66H[K[24;66H74,1[10C56%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PAM authentication via KbdInteractiveAuthentication may bypass[m[24;66H[K[24;66H75,1[10C57%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# the setting of "PermitRootLogin without-password".[m[24;66H[K[24;66H76,1[10C58%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# If you just want the PAM account and session checks to run without[m[24;66H[K[24;66H77,1[10C59%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PAM authentication, then enable this but set PasswordAuthentication[m[24;66H[K[24;66H78,1[10C60%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# and KbdInteractiveAuthentication to 'no'.[m[24;66H[K[24;66H79,1[10C61%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mUsePAM[m [1m[96myes[m[24;66H[K[24;66H80,1[10C62%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H81,1[10C63%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AllowAgentForwarding yes[m[24;66H[K[24;66H82,1[10C64%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AllowTcpForwarding yes[m[24;66H[K[24;66H83,1[10C65%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GatewayPorts no[m[24;66H[K[24;66H84,1[10C66%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mX11Forwarding[m [1m[96myes[m[24;66H[K[24;66H85,1[10C67%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#X11DisplayOffset 10[m[24;66H[K[24;66H86,1[10C68%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#X11UseLocalhost yes[m[24;66H[K[24;66H87,1[10C69%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitTTY yes[m[24;66H[K[24;66H88,1[10C70%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mPrintMotd[m [1m[96mno[m[24;66H[K[24;66H89,1[10C71%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PrintLastLog yes[m[24;66H[K[24;66H90,1[10C72%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#TCPKeepAlive yes[m[24;66H[K[24;66H91,1[10C73%[18;1H[?25h[?25lф[18;2H#[93mX11DisplayOffset[m [95m10[m[24;69H3-2[18;2H[?25h[?25l[96m#X11DisplayOffset 10[m[18;21H[K[24;69H1  [18;1H[?25h[?25lZ#[93mX11DisplayOffset[m [95m10[m[24;69H2[18;2H[?25h[?25lZ#[93mX11DisplayOffset[m [95m10[m[24;69H3[18;3H[?25h[?25l#[93mX11DisplayOffset[m [95m10[m[18;22H[K[24;69H2[18;2H[?25h[?25l[96m#X11DisplayOffset 10[m[18;21H[K[24;69H1[18;1H[?25h[?25l[24;1H[K[24;66H91,1[10C73%[18;1H[?25h[?25l[24;56HZ[18;1H[?25h[?25l[24;57HZ[18;1H[?2004l[>4;m[24;1H"/etc/ssh/sshd_config"[24;56H[K[24;24H122L, 3246B written
+[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ sudo vim /etc/ssh/sshd_config
+[?2004l
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"/etc/ssh/sshd_config" 122L, 3246B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;? ]11;? [1;1H[34m# PAM authentication via KbdInteractiveAuthentication may bypass
+# the setting of "PermitRootLogin without-password".[m[2;53H[K[3;1H[34m# If you just want the PAM account and session checks to run without[m[3;69H[K[4;1H[34m# PAM authentication, then enable this but set PasswordAuthentication
+# and KbdInteractiveAuthentication to 'no'.[m
+[38;5;130mUsePAM[m [36myes[m
+
+[34m#AllowAgentForwarding yes
+#AllowTcpForwarding yes
+#GatewayPorts no[m
+[38;5;130mX11Forwarding[m [36myes[m
+[34m#X11DisplayOffset 10
+#X11UseLocalhost yes
+#PermitTTY yes[m
+[38;5;130mPrintMotd[m [36mno[m
+[34m#PrintLastLog yes
+#TCPKeepAlive yes
+#PermitUserEnvironment no
+#Compression delayed
+#ClientAliveInterval 0
+#ClientAliveCountMax 3
+#UseDNS no
+#PidFile /run/sshd.pid[m[24;66H91,1[10C79%[12;1H[?25h[?12$p[?25l[24;56H/[12;1H[24;57H0[12;1H[24;58Hc[12;1H[24;59H0[12;1H[24;60Hc[12;1H[24;61H/[12;1H[24;62H0[12;1H[24;63Hc[12;1H[24;64H0[12;1H[24;65Hc[12;1H[24;56H          [12;1H[27m[23m[29m[m[H[2J[1;1H[96m# PAM authentication via KbdInteractiveAuthentication may bypass
+# the setting of "PermitRootLogin without-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and KbdInteractiveAuthentication to 'no'.[m
+[93mUsePAM[m [1m[96myes[m
+
+[96m#AllowAgentForwarding yes
+#AllowTcpForwarding yes
+#GatewayPorts no[m
+[93mX11Forwarding[m [1m[96myes[m
+[96m#X11DisplayOffset 10
+#X11UseLocalhost yes
+#PermitTTY yes[m
+[93mPrintMotd[m [1m[96mno[m
+[96m#PrintLastLog yes
+#TCPKeepAlive yes
+#PermitUserEnvironment no
+#Compression delayed
+#ClientAliveInterval 0
+#ClientAliveCountMax 3
+#UseDNS no
+#PidFile /run/sshd.pid[m[24;66H91,1[10C79%
+"/etc/ssh/sshd_config" 122L, 3246B[12;1H[?25h[?25l[24;56H~@k[12;1H[24;56H   [13;1H[24;67H2[13;1H[?25h[?25l[24;56H~@k[13;1H[24;56H   [14;1H[24;67H3[14;1H[?25h[?25l[24;56H~@k[14;1H[24;56H   [15;1H[24;67H4[15;1H[?25h[?25l[24;56H~@k[15;1H[24;56H   [16;1H[24;67H5[16;1H[?25h[?25l[24;67H6[17;1H[?25h[?25l[24;56H~@k[17;1H[24;56H   [18;1H[24;67H7[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#MaxStartups 10:30:100[m[24;1H[K[24;66H98,1[10C80%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#PermitTunnel no[m[24;66H[K[24;66H99,1[10C81%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#ChrootDirectory none[m[24;66H[K[24;66H100,1[9C82%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#VersionAddendum none[m[24;66H[K[24;66H101,1[9C83%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[24;66H[K[24;66H102,1[9C84%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# no default banner path[m[24;66H[K[24;66H103,1[9C85%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#Banner none[m[24;66H[K[24;66H104,1[9C86%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[24;66H[K[24;66H105,1[9C87%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# Allow client to pass locale environment variables[m[24;66H[K[24;66H106,1[9C88%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[93mAcceptEnv[m LANG LC_[38;5;224m*[m[24;66H[K[24;66H107,0-1[7C89%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[24;66H[K[24;66H108,1[9C90%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# override default of no subsystems[m[24;66H[K[24;66H109,1[9C91%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[93mSubsystem[m[7Csftp    /usr/lib/openssh/sftp-server[24;66H[K[24;66H110,0-1[7C92%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H111,1[9C93%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Example of overriding settings on a per-user basis[m[24;66H[K[24;66H112,1[9C94%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#Match User anoncvs[m[24;66H[K[24;66H113,0-1[7C95%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#       X11Forwarding no[m[24;66H[K[24;66H114,1[9C96%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       AllowTcpForwarding no[m[24;66H[K[24;66H115,1[9C97%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#       PermitTTY no[m[24;66H[K[24;66H116,0-1[7C98%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#       ForceCommand cvs server[m[24;66H[K[24;66H117,1[9CBot[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [19;1H[24;68H8[19;1H[?25h[?25l[24;56H~@k[19;1H[24;56H   [20;1H[24;68H9[20;1H[?25h[?25l[24;56H~@k[20;1H[24;56H   [21;1H[24;67H20[21;1H[?25h[?25l[24;68H1[22;1H[?25h[?25l[24;56H~@k[22;1H[24;56H   [23;1H[24;68H2[23;1H[?25h [?25l[24;56H~@k[23;1H[24;56H   [23;1H[?25h[?25l[24;56H~@k[23;1H[24;56H   [23;1H[?25h[?25l[24;56H~@k[23;1H[24;56H   [23;1H[?25h[?25l[24;56H~@k[23;1H[24;56H   [22;1H[24;68H1[22;1H[?25h[?25l[24;56H~@k[22;1H[24;56H   [21;1H[24;68H0[21;1H[?25h[?25l[24;56H~@k[21;1H[24;56H   [20;1H[24;67H19[20;1H[?25h[?25l[24;56H~@k[20;1H[24;56H   [19;1H[24;68H8[19;1H[?25h[?25l[24;68H7[18;1H[?25h[?25l[24;68H6,0-1[17;1H[?25h[?25l[24;56H~@k[17;1H[24;56H   [16;1H[24;68H5,1  [16;1H[?25h[?25l[24;56H~@k[16;1H[24;56H   [15;1H[24;68H4[15;1H[?25h[?25l[24;56H~@k[15;1H[24;56H   [14;1H[24;68H3,0-1[14;1H[?25h[?25l[24;56H~@k[14;1H[24;56H   [13;1H[24;68H2,1  [13;1H[?25h[?25l[24;56H~@k[13;1H[24;56H   [12;1H[24;68H1[12;1H[?25h[?25l[24;56H~@k[12;1H[24;56H   [11;1H[24;68H0,0-1[11;1H[?25h[?25l[24;56H~@k[11;1H[24;56H   [10;1H[24;67H09,1  [10;1H[?25h[?25l[24;68H8[9;1H[?25h[?25l[24;68H7,0-1[8;1H[?25h[?25l[24;68H6,1  [7;1H[?25h[?25l[24;56H~@k[7;1H[24;56H   [6;1H[24;68H5[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#ClientAliveInterval 0[m[24;66H[K[24;66H104,1[9C98%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#Compression delayed[m[24;66H[K[24;66H103,1[9C97%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitUserEnvironment no[m[24;66H[K[24;66H102,1[9C96%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#TCPKeepAlive yes[m[24;66H[K[24;66H101,1[9C95%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#PrintLastLog yes[m[24;66H[K[24;66H100,1[9C94%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mPrintMotd[m [1m[96mno[m[24;66H[K[24;66H99,1[10C93%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#PermitTTY yes[m[24;66H[K[24;66H98,1[10C92%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#X11UseLocalhost yes[m[24;66H[K[24;66H97,1[10C91%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#X11DisplayOffset 10[m[24;66H[K[24;66H96,1[10C90%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mX11Forwarding[m [1m[96myes[m[24;66H[K[24;66H95,1[10C89%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#GatewayPorts no[m[24;66H[K[24;66H94,1[10C88%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#AllowTcpForwarding yes[m[24;66H[K[24;66H93,1[10C87%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AllowAgentForwarding yes[m[24;66H[K[24;66H92,1[10C86%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H91,1[10C85%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mUsePAM[m [1m[96myes[m[24;66H[K[24;66H90,1[10C84%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# and KbdInteractiveAuthentication to 'no'.[m[24;66H[K[24;66H89,1[10C83%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# PAM authentication, then enable this but set PasswordAuthentication[m[24;66H[K[24;66H88,1[10C82%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# If you just want the PAM account and session checks to run without[m[24;66H[K[24;66H87,1[10C81%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# the setting of "PermitRootLogin without-password".[m[24;66H[K[24;66H86,0-1[8C80%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# PAM authentication via KbdInteractiveAuthentication may bypass[m[24;66H[K[24;66H85,1[10C79%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# PasswordAuthentication.  Depending on your PAM configuration,[m[24;66H[K[24;66H84,1[10C78%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# be allowed through the KbdInteractiveAuthentication and[m[24;66H[K[24;66H83,1[10C77%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# and session processing. If this is enabled, PAM authentication will[m[24;66H[K[24;66H82,1[10C76%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Set this to 'yes' to enable PAM authentication, account processing,[m[24;66H[K[24;66H81,1[10C75%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H80,1[10C74%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIKeyExchange no[m[24;66H[K[24;66H79,1[10C73%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIStrictAcceptorCheck yes[m[24;66H[K[24;66H78,1[10C72%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPICleanupCredentials yes[m[24;66H[K[24;66H77,1[10C71%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIAuthentication no[m[24;66H[K[24;66H76,1[10C70%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# GSSAPI options[m[24;66H[K[24;66H75,0-1[8C69%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H74,1[10C68%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosGetAFSToken no[m[24;66H[K[24;66H73,1[10C67%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosTicketCleanup yes[m[24;66H[K[24;66H72,1[10C66%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosOrLocalPasswd yes[m[24;66H[K[24;66H71,1[10C65%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosAuthentication no[m[24;66H[K[24;66H70,1[10C64%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# Kerberos options[m[24;66H[K[24;66H69,0-1[8C63%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H68,1[10C62%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H67,1[10C61%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H66,1[10C60%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H65,1[10C59%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H64,1[10C58%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mPermitEmptyPasswords[m [1m[96mno[m[24;66H[K[24;66H63,0-1[8C57%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mPasswordAuthentication[m [1m[96mno[m[24;66H[K[24;66H62,1[10C56%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# To disable tunneled clear text passwords, change to no here![m[24;66H[K[24;66H61,1[10C55%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H60,1[10C54%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#IgnoreRhosts yes[m[24;66H[K[24;66H59,0-1[8C53%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Don't read the user's ~/.rhosts and ~/.shosts files[m[24;66H[K[24;66H58,1[10C52%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#IgnoreUserKnownHosts no[m[24;66H[K[24;66H57,1[10C51%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# HostbasedAuthentication[m[24;66H[K[24;66H56,1[10C50%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Change to yes if you don't trust ~/.ssh/known_hosts for[m[24;66H[K[24;66H55,0-1[8C49%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mHostbasedAuthentication[m [1m[96mno[m[24;66H[K[24;66H54,1[10C48%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts[m[24;66H[K[24;66H53,1[10C47%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H52,1[10C46%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysCommandUser nobody[m[24;66H[K[24;66H51,1[10C45%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysCommand none[m[24;66H[K[24;66H50,1[10C44%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H49,1[10C43%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedPrincipalsFile none[m[24;66H[K[24;66H48,1[10C42%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H47,0-1[8C41%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2[m[24;66H[K[24;66H46,1[10C40%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H45,1[10C39%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H44,0-1[8C38%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mPubkeyAuthentication[m [1m[96myes[m[24;66H[K[24;66H43,1[10C37%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H42,0-1[8C36%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mMaxSessions[m [95m2[m[24;66H[K[24;66H41,1[10C35%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mMaxAuthTries[m [95m2[m[24;66H[K[24;66H40,1[10C34%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#StrictModes yes[m[24;66H[K[24;66H39,0-1[8C33%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitRootLogin prohibit-password[m[24;66H[K[24;66H38,1[10C32%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mLoginGraceTime[m [95m10s[m[24;66H[K[24;66H37,0-1[8C31%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H36,1[10C30%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Authentication:[m[24;66H[K[24;66H35,1[10C29%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H34,1[10C28%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#LogLevel INFO[m[24;66H[K[24;66H33,1[10C27%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#SyslogFacility AUTH[m[24;66H[K[24;66H32,1[10C26%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# Logging[m[24;66H[K[24;66H31,0-1[8C25%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H30,1[10C24%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [7;1H[24;67H1,0-1[7;1H[?25h[?25l[24;56H~@k[7;1H[24;56H   [8;1H[24;67H2,1  [8;1H[?25h[?25l[24;67H3[9;1H[?25h[?25l[24;67H4[10;1H[?25h[?25l[24;56H~@k[10;1H[24;56H   [11;1H[24;67H5[11;1H[?25h[?25l[24;67H6[12;1H[?25h[?25l[24;67H7,0-1[13;1H[?25h[?25l[24;56H~@k[13;1H[24;56H   [14;1H[24;67H8,1  [14;1H[?25h[?25l[24;67H9,0-1[15;1H[?25h[?25l[24;56H~@k[15;1H[24;56H   [16;1H[24;66H40,1  [16;1H[?25h[?25l[24;67H1[17;1H[?25h[?25l[24;56H~@k[17;1H[24;56H   [18;1H[24;67H2,0-1[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts[m[24;66H[K[24;66H43,1[10C25%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mHostbasedAuthentication[m [1m[96mno[m[24;66H[K[24;66H44,0-1[8C26%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes if you don't trust ~/.ssh/known_hosts for[m[24;66H[K[24;66H45,1[10C27%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# HostbasedAuthentication[m[24;66H[K[24;66H46,1[10C28%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#IgnoreUserKnownHosts no[m[24;66H[K[24;66H47,0-1[8C29%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# Don't read the user's ~/.rhosts and ~/.shosts files[m[24;66H[K[24;66H48,1[10C30%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#IgnoreRhosts yes[m[24;66H[K[24;66H49,1[10C31%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[24;66H[K[24;66H50,1[10C32%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# To disable tunneled clear text passwords, change to no here![m[24;66H[K[24;66H51,1[10C33%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mPasswordAuthentication[m [1m[96mno[m[24;66H[K[24;66H52,1[10C34%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mPermitEmptyPasswords[m [1m[96mno[m[24;66H[K[24;66H53,1[10C35%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[24;66H[K[24;66H54,1[10C36%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H55,0-1[8C37%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H56,1[10C38%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H57,1[10C39%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H58,1[10C40%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# Kerberos options[m[24;66H[K[24;66H59,0-1[8C41%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosAuthentication no[m[24;66H[K[24;66H60,1[10C42%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosOrLocalPasswd yes[m[24;66H[K[24;66H61,1[10C43%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosTicketCleanup yes[m[24;66H[K[24;66H62,1[10C44%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#KerberosGetAFSToken no[m[24;66H[K[24;66H63,0-1[8C45%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[24;66H[K[24;66H64,1[10C46%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# GSSAPI options[m[24;66H[K[24;66H65,1[10C47%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIAuthentication no[m[24;66H[K[24;66H66,1[10C48%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPICleanupCredentials yes[m[24;66H[K[24;66H67,1[10C49%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [17;1H[24;67H6[17;1H[?25h[?25l[24;67H7[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIStrictAcceptorCheck yes[m[24;66H[K[24;66H68,1[10C50%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GSSAPIKeyExchange no[m[24;66H[K[24;66H69,0-1[8C51%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H70,1[10C52%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# Set this to 'yes' to enable PAM authentication, account processing,[m[24;66H[K[24;66H71,1[10C53%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# and session processing. If this is enabled, PAM authentication will[m[24;66H[K[24;66H72,1[10C54%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# be allowed through the KbdInteractiveAuthentication and[m[24;66H[K[24;66H73,1[10C55%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# PasswordAuthentication.  Depending on your PAM configuration,[m[24;66H[K[24;66H74,1[10C56%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PAM authentication via KbdInteractiveAuthentication may bypass[m[24;66H[K[24;66H75,0-1[8C57%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# the setting of "PermitRootLogin without-password".[m[24;66H[K[24;66H76,1[10C58%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# If you just want the PAM account and session checks to run without[m[24;66H[K[24;66H77,1[10C59%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m# PAM authentication, then enable this but set PasswordAuthentication[m[24;66H[K[24;66H78,1[10C60%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m# and KbdInteractiveAuthentication to 'no'.[m[24;66H[K[24;66H79,1[10C61%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[93mUsePAM[m [1m[96myes[m[24;66H[K[24;66H80,1[10C62%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;66H[K[24;66H81,1[10C63%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#AllowAgentForwarding yes[m[24;66H[K[24;66H82,1[10C64%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#AllowTcpForwarding yes[m[24;66H[K[24;66H83,1[10C65%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#GatewayPorts no[m[24;66H[K[24;66H84,1[10C66%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[93mX11Forwarding[m [1m[96myes[m[24;66H[K[24;66H85,1[10C67%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#X11DisplayOffset 10[m[24;66H[K[24;66H86,0-1[8C68%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[96m#X11UseLocalhost yes[m[24;66H[K[24;66H87,1[10C69%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m#PermitTTY yes[m[24;66H[K[24;66H88,1[10C70%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[93mPrintMotd[m [1m[96mno[m[24;66H[K[24;66H89,1[10C71%[18;1H[?25h[?25l[24;56H~@k[18;1H[24;56H   [17;1H[24;67H8[17;1H[?25h[?25l[24;67H7[16;1H[?25h[?25l[24;56H~@k[16;1H[24;56H   [15;1H[24;67H6,0-1[15;1H[?25h[?25l[24;67H5,1  [14;1H[?25h[?25l[24;67H4[13;1H[?25h[?25l[24;56H~@k[13;1H[24;56H   [12;1H[24;67H3[12;1H[?25h[?25l[24;67H2[11;1H[?25h[?25l[24;67H1[10;1H[?25h[?25l[24;56H~@k[10;1H[24;56H   [9;1H[24;67H0[9;1H[?25h[?25l[24;66H79[8;1H[?25h[?25l[24;56H~@k[8;1H[24;56H   [7;1H[24;67H8[7;1H[?25h[?25l[24;56H~@k[7;1H[24;56H   [6;1H[24;67H7[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#GSSAPIAuthentication no[m[24;66H[K[24;66H76,1[10C70%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# GSSAPI options[m[24;66H[K[24;66H75,0-1[8C69%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H74,1[10C68%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosGetAFSToken no[m[24;66H[K[24;66H73,1[10C67%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosTicketCleanup yes[m[24;66H[K[24;66H72,1[10C66%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosOrLocalPasswd yes[m[24;66H[K[24;66H71,1[10C65%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#KerberosAuthentication no[m[24;66H[K[24;66H70,1[10C64%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Kerberos options[m[24;66H[K[24;66H69,0-1[8C63%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H68,1[10C62%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mKbdInteractiveAuthentication[m [1m[96mno[m[24;66H[K[24;66H67,1[10C61%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# some PAM modules and threads)[m[24;66H[K[24;66H66,1[10C60%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# Change to yes to enable challenge-response passwords (beware issues with[m[24;66H[K[24;66H65,1[10C59%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H64,1[10C58%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mPermitEmptyPasswords[m [1m[96mno[m[24;66H[K[24;66H63,0-1[8C57%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mPasswordAuthentication[m [1m[96mno[m[24;66H[K[24;66H62,1[10C56%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# To disable tunneled clear text passwords, change to no here![m[24;66H[K[24;66H61,1[10C55%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H60,1[10C54%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#IgnoreRhosts yes[m[24;66H[K[24;66H59,0-1[8C53%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Don't read the user's ~/.rhosts and ~/.shosts files[m[24;66H[K[24;66H58,1[10C52%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#IgnoreUserKnownHosts no[m[24;66H[K[24;66H57,1[10C51%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# HostbasedAuthentication[m[24;66H[K[24;66H56,1[10C50%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# Change to yes if you don't trust ~/.ssh/known_hosts for[m[24;66H[K[24;66H55,0-1[8C49%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mHostbasedAuthentication[m [1m[96mno[m[24;66H[K[24;66H54,1[10C48%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts[m[24;66H[K[24;66H53,1[10C47%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H52,1[10C46%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysCommandUser nobody[m[24;66H[K[24;66H51,1[10C45%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysCommand none[m[24;66H[K[24;66H50,1[10C44%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H49,1[10C43%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedPrincipalsFile none[m[24;66H[K[24;66H48,1[10C42%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H47,0-1[8C41%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2[m[24;66H[K[24;66H46,1[10C40%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# Expect .ssh/authorized_keys2 to be disregarded by default in future.[m[24;66H[K[24;66H45,1[10C39%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H44,0-1[8C38%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mPubkeyAuthentication[m [1m[96myes[m[24;66H[K[24;66H43,1[10C37%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H42,0-1[8C36%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mMaxSessions[m [95m2[m[24;66H[K[24;66H41,1[10C35%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93mMaxAuthTries[m [95m2[m[24;66H[K[24;66H40,1[10C34%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#StrictModes yes[m[24;66H[K[24;66H39,0-1[8C33%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#PermitRootLogin prohibit-password[m[24;66H[K[24;66H38,1[10C32%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[93mLoginGraceTime[m [95m10s[m[24;66H[K[24;66H37,0-1[8C31%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H36,1[10C30%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Authentication:[m[24;66H[K[24;66H35,1[10C29%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H34,1[10C28%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#LogLevel INFO[m[24;66H[K[24;66H33,1[10C27%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#SyslogFacility AUTH[m[24;66H[K[24;66H32,1[10C26%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# Logging[m[24;66H[K[24;66H31,0-1[8C25%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H30,1[10C24%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#RekeyLimit default none[m[24;66H[K[24;66H29,0-1[8C23%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m# Ciphers and keying[m[24;66H[K[24;66H28,1[10C22%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[24;66H[K[24;66H27,1[10C21%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_ed25519_key[m[24;66H[K[24;66H26,1[10C20%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_ecdsa_key[m[24;66H[K[24;66H25,0-1[8C19%[6;1H[?25h[?25l[24;56H~@k[6;1H[24;56H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m#HostKey /etc/ssh/ssh_host_rsa_key[m[24;66H[K[24;66H24,1[10C18%[6;1H[?25h[?25l[24;56H/[6;1H[24;56H[K[24;1H/[?25hP[?25l[15;2H[7m[96mP[m[24;66H33,2[10C18%[24;66H[K[24;3H[?25he[?25l[15;3H[7m[96me[m[24;66H33,2[10C18%[24;66H[K[24;4H[?25hr[?25l[15;4H[7m[96mr[m[24;66H33,2[10C18%[24;66H[K[24;5H[?25h[?25l[24;4H[K[15;4H[96mr[m[24;66H33,2[10C18%[24;66H[K[24;4H[?25h[?25l[24;3H[K[15;3H[96me[m[24;66H33,2[10C18%[24;66H[K[24;3H[?25h[?25l[24;2H[K[15;2H[96mP[m[24;66H24,1[10C18%[24;66H[K[24;2H[?25h [?25l[6;1H[24;66H24,1[10C18%[6;1H[?25h[?25l[24;56Ha[6;1H[24;56H [6;2H[24;1H[1m-- INSERT --[m[24;66H[K[24;66H24,2[10C18%[6;2H[?25h[?25l[1;23r[1;1H[L[1;24r[24;66H[K[24;66H23,2[10C17%[6;2H[?25h[?25l[24;67H4[7;2H[?25h[?25l[24;67H5,1[8;1H[?25h[?25l[24;67H6,2[9;2H[?25h[?25l[24;67H7[10;2H[?25h[?25l[24;67H8[11;2H[?25h[?25l[24;67H9,1[12;1H[?25h[?25l[24;66H30,2[13;2H[?25h[?25l[24;67H1,1[14;1H[?25h[?25l[24;67H2,2[15;2H[?25h[?25l[24;67H3[16;2H[?25h[?25l[93mPermitRootLogin[m [1m[96mprohibit-password[m[16;34H[K[24;69H1[16;1H[?25h[?25l[24;69H2[16;2H[?25h[?25l[24;69H3[16;3H[?25h[?25l[24;69H4[16;4H[?25h[?25l[24;69H5[16;5H[?25h[?25l[24;69H6[16;6H[?25h[?25l[24;69H7[16;7H[?25h[?25l[24;69H8[16;8H[?25h[?25l[24;69H9[16;9H[?25h[?25l[24;69H10[16;10H[?25h[?25l[24;70H1[16;11H[?25h[?25l[24;70H2[16;12H[?25h[?25l[24;70H3[16;13H[?25h[?25l[24;70H4[16;14H[?25h[?25l[24;70H5[16;15H[?25h[?25l[24;70H6[16;16H[?25h[?25l[24;70H7[16;17H[?25h[?25l[24;70H8[16;18H[?25h[?25l[24;70H9[16;19H[?25h[?25l[24;69H20[16;20H[?25h[?25l[24;70H1[16;21H[?25h[?25l[24;70H2[16;22H[?25h[?25l[24;70H3[16;23H[?25h[?25l[24;70H4[16;24H[?25h[?25l[24;70H5[16;25H[?25h[?25l[24;70H6[16;26H[?25h[?25l[24;70H8[16;28H[?25h[?25l[24;70H9[16;29H[?25h[?25l[24;69H30[16;30H[?25h[?25l[24;70H1[16;31H[?25h[?25l[24;70H2[16;32H[?25h[?25l[24;70H3[16;33H[?25h[?25l[24;70H4[16;34H[?25h[?25l[16;17Hprohibit-passwor[16;33H[K[24;70H3[16;33H[?25h[?25l[16;32H[K[24;70H2[16;32H[?25h[?25l[16;31H[K[24;70H1[16;31H[?25h[?25l[16;30H[K[24;70H0[16;30H[?25h[?25l[16;29H[K[24;69H29[16;29H[?25h[?25l[16;28H[K[24;70H8[16;28H[?25h[?25l[16;27H[K[24;70H7[16;27H[?25h[?25l[16;26H[K[24;70H6[16;26H[?25h[?25l[16;25H[K[24;70H5[16;25H[?25h[?25l[16;24H[K[24;70H4[16;24H[?25h[?25l[16;23H[K[24;70H3[16;23H[?25h[?25l[16;22H[K[24;70H2[16;22H[?25h[?25l[16;21H[K[24;70H1[16;21H[?25h[?25l[16;20H[K[24;70H0[16;20H[?25h[?25l[16;19H[K[24;69H19[16;19H[?25h[?25l[16;18H[K[24;70H8[16;18H[?25h[?25l[16;17H[K[24;70H7[16;17H[?25h[?25ln[24;70H8[16;18H[?25h[?25l[1m[96mno[m[24;70H9[16;19H[?25h[?25l[24;1H[K[24;66H33,18[9C17%[16;18H[?25h[?25l[24;56HZ[16;18H[?25h[?25l[24;57HZ[16;18H[?2004l[>4;m[24;1H"/etc/ssh/sshd_config"[24;56H[K[24;24H122L, 3230B written
+[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ cat /etc/ssh/sshd_cond[Kfid[Kf[Kg
+[?2004l
+# This is the sshd server system-wide configuration file.  See
+# sshd_config(5) for more information.
+
+# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+
+# The strategy used for options in the default sshd_config shipped with
+# OpenSSH is to specify options with their default value where
+# possible, but leave them commented.  Uncommented options override the
+# default value.
+
+Include /etc/ssh/sshd_config.d/*.conf
+
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+
+#HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_ecdsa_key
+#HostKey /etc/ssh/ssh_host_ed25519_key
+
+# Ciphers and keying
+#RekeyLimit default none
+
+# Logging
+#SyslogFacility AUTH
+#LogLevel INFO
+
+# Authentication:
+
+LoginGraceTime 10s
+PermitRootLogin no
+#StrictModes yes
+MaxAuthTries 2
+MaxSessions 2
+
+PubkeyAuthentication yes
+
+# Expect .ssh/authorized_keys2 to be disregarded by default in future.
+#AuthorizedKeysFile	.ssh/authorized_keys .ssh/authorized_keys2
+
+#AuthorizedPrincipalsFile none
+
+#AuthorizedKeysCommand none
+#AuthorizedKeysCommandUser nobody
+
+# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
+HostbasedAuthentication no
+# Change to yes if you don't trust ~/.ssh/known_hosts for
+# HostbasedAuthentication
+#IgnoreUserKnownHosts no
+# Don't read the user's ~/.rhosts and ~/.shosts files
+#IgnoreRhosts yes
+
+# To disable tunneled clear text passwords, change to no here!
+PasswordAuthentication no
+PermitEmptyPasswords no
+
+# Change to yes to enable challenge-response passwords (beware issues with
+# some PAM modules and threads)
+KbdInteractiveAuthentication no
+
+# Kerberos options
+#KerberosAuthentication no
+#KerberosOrLocalPasswd yes
+#KerberosTicketCleanup yes
+#KerberosGetAFSToken no
+
+# GSSAPI options
+#GSSAPIAuthentication no
+#GSSAPICleanupCredentials yes
+#GSSAPIStrictAcceptorCheck yes
+#GSSAPIKeyExchange no
+
+# Set this to 'yes' to enable PAM authentication, account processing,
+# and session processing. If this is enabled, PAM authentication will
+# be allowed through the KbdInteractiveAuthentication and
+# PasswordAuthentication.  Depending on your PAM configuration,
+# PAM authentication via KbdInteractiveAuthentication may bypass
+# the setting of "PermitRootLogin without-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and KbdInteractiveAuthentication to 'no'.
+UsePAM yes
+
+#AllowAgentForwarding yes
+#AllowTcpForwarding yes
+#GatewayPorts no
+X11Forwarding yes
+#X11DisplayOffset 10
+#X11UseLocalhost yes
+#PermitTTY yes
+PrintMotd no
+#PrintLastLog yes
+#TCPKeepAlive yes
+#PermitUserEnvironment no
+#Compression delayed
+#ClientAliveInterval 0
+#ClientAliveCountMax 3
+#UseDNS no
+#PidFile /run/sshd.pid
+#MaxStartups 10:30:100
+#PermitTunnel no
+#ChrootDirectory none
+#VersionAddendum none
+
+# no default banner path
+#Banner none
+
+# Allow client to pass locale environment variables
+AcceptEnv LANG LC_*
+
+# override default of no subsystems
+Subsystem	sftp	/usr/lib/openssh/sftp-server
+
+# Example of overriding settings on a per-user basis
+#Match User anoncvs
+#	X11Forwarding no
+#	AllowTcpForwarding no
+#	PermitTTY no
+#	ForceCommand cvs server
+[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ [7msudo systemctl restart ssh[27msudo systemctl restart ssh
+[?2004l
+[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ [7msudo systemctl enable --now ssh[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl enable --now ssh
+[?2004l
+Synchronizing state of ssh.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable ssh
+[?2004h]0;ubuntu@ubuntu-jammy: ~/.ssh [01;32mubuntu@ubuntu-jammy[00m:[01;34m~/.ssh[00m$ exit
+[?2004l
+logout
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ exit
+[?2004l
+exit
+
+Script done on 2025-04-09 23:12:06+00:00 [COMMAND_EXIT_CODE="0"]

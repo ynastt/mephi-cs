@@ -1,0 +1,1082 @@
+Script started on 2025-04-03 19:39:57+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="102" LINES="21"]
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ pwd
+[?2004l/home/vagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ cat /etc/passwd
+[?2004lroot:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:113::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:114::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+landscape:x:111:116::/var/lib/landscape:/usr/sbin/nologin
+fwupd-refresh:x:112:117:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+vagrant:x:1000:1000:,,,:/home/vagrant:/bin/bash
+ubuntu:x:1001:1001:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ cat /etc/passwd | grep vagrant
+[?2004l[01;31m[Kvagrant[m[K:x:1000:1000:,,,:/home/[01;31m[Kvagrant[m[K:/bin/bash
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo cat /etc/shadow 
+[?2004lroot:*:20174:0:99999:7:::
+daemon:*:20174:0:99999:7:::
+bin:*:20174:0:99999:7:::
+sys:*:20174:0:99999:7:::
+sync:*:20174:0:99999:7:::
+games:*:20174:0:99999:7:::
+man:*:20174:0:99999:7:::
+lp:*:20174:0:99999:7:::
+mail:*:20174:0:99999:7:::
+news:*:20174:0:99999:7:::
+uucp:*:20174:0:99999:7:::
+proxy:*:20174:0:99999:7:::
+www-data:*:20174:0:99999:7:::
+backup:*:20174:0:99999:7:::
+list:*:20174:0:99999:7:::
+irc:*:20174:0:99999:7:::
+gnats:*:20174:0:99999:7:::
+nobody:*:20174:0:99999:7:::
+systemd-network:*:20174:0:99999:7:::
+systemd-resolve:*:20174:0:99999:7:::
+messagebus:*:20174:0:99999:7:::
+systemd-timesync:*:20174:0:99999:7:::
+syslog:*:20174:0:99999:7:::
+_apt:*:20174:0:99999:7:::
+tss:*:20174:0:99999:7:::
+uuidd:*:20174:0:99999:7:::
+tcpdump:*:20174:0:99999:7:::
+sshd:*:20174:0:99999:7:::
+pollinate:*:20174:0:99999:7:::
+landscape:*:20174:0:99999:7:::
+fwupd-refresh:*:20174:0:99999:7:::
+vagrant:$y$j9T$MzxcHheeQNKgDahsm0GbS/$JjLOywXT4tbfRggUEVYXlRKru175r1K0hDVRUzb.yt9:20174:0:99999:7:::
+ubuntu:!:20180:0:99999:7:::
+lxd:!:20180::::::
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo cat /etc/shadow | grep vagrant
+[?2004l[01;31m[Kvagrant[m[K:$y$j9T$MzxcHheeQNKgDahsm0GbS/$JjLOywXT4tbfRggUEVYXlRKru175r1K0hDVRUzb.yt9:20174:0:99999:7:::
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ man shadow
+[?2004l[?1049h[22;0;0t[?1h=SHADOW(5)                           File Formats and Conversions                          SHADOW(5)[m
+[m
+[1mNAME[0m[m
+       shadow - shadowed password file[m
+[m
+[1mDESCRIPTION[0m[m
+       shadow is a file which contains the password information for the system's accounts and[m
+       optional aging information.[m
+[m
+       This file must not be readable by regular users if password security is to be maintained.[m
+[m
+       Each line of this file contains 9 fields, separated by colons (“:”), in the following order:[m
+[m
+       [1mlogin[0m [1mname[0m[m
+           It must be a valid account name, which exist on the system.[m
+[m
+       [1mencrypted[0m [1mpassword[0m[m
+           This field may be empty, in which case no passwords are required to authenticate as the[m
+           specified login name. However, some applications which read the /etc/shadow file may[m
+           decide not to permit any access at all if the password field is empty.[m
+[7m Manual page shadow(5) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           A password field which starts with an exclamation mark means that the password is[m
+[7m Manual page shadow(5) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           locked. The remaining characters on the line represent the password field before the[m
+[7m Manual page shadow(5) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           password was locked.[m
+[7m Manual page shadow(5) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Refer to [1mcrypt[0m(3) for details on how this string is interpreted.[m
+[7m Manual page shadow(5) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If the password field contains some string that is not a valid result of [1mcrypt[0m(3), for[m
+[7m Manual page shadow(5) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           instance ! or *, the user will not be able to use a unix password to log in (but the[m
+[7m Manual page shadow(5) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           user may log in the system by other means).[m
+[7m Manual page shadow(5) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mdate[0m [1mof[0m [1mlast[0m [1mpassword[0m [1mchange[0m[m
+[7m Manual page shadow(5) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The date of the last password change, expressed as the number of days since Jan 1, 1970.[m
+[7m Manual page shadow(5) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The value 0 has a special meaning, which is that the user should change her password the[m
+[7m Manual page shadow(5) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           next time she will log in the system.[m
+[7m Manual page shadow(5) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           An empty field means that password aging features are disabled.[m
+[7m Manual page shadow(5) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mminimum[0m [1mpassword[0m [1mage[0m[m
+[7m Manual page shadow(5) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The minimum password age is the number of days the user will have to wait before she[m
+[7m Manual page shadow(5) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           will be allowed to change her password again.[m
+[7m Manual page shadow(5) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           An empty field and value 0 mean that there are no minimum password age.[m
+[7m Manual page shadow(5) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mmaximum[0m [1mpassword[0m [1mage[0m[m
+[7m Manual page shadow(5) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The maximum password age is the number of days after which the user will have to change[m
+[7m Manual page shadow(5) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           her password.[m
+[7m Manual page shadow(5) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           After this number of days is elapsed, the password may still be valid. The user should[m
+[7m Manual page shadow(5) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           be asked to change her password the next time she will log in.[m
+[7m Manual page shadow(5) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           An empty field means that there are no maximum password age, no password warning period,[m
+[7m Manual page shadow(5) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           and no password inactivity period (see below).[m
+[7m Manual page shadow(5) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If the maximum password age is lower than the minimum password age, the user cannot[m
+[7m Manual page shadow(5) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           change her password.[m
+[7m Manual page shadow(5) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mpassword[0m [1mwarning[0m [1mperiod[0m[m
+[7m Manual page shadow(5) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The number of days before a password is going to expire (see the maximum password age[m
+[7m Manual page shadow(5) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           above) during which the user should be warned.[m
+[7m Manual page shadow(5) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           An empty field and value 0 mean that there are no password warning period.[m
+[7m Manual page shadow(5) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mpassword[0m [1minactivity[0m [1mperiod[0m[m
+[7m Manual page shadow(5) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The number of days after a password has expired (see the maximum password age above)[m
+[7m Manual page shadow(5) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           during which the password should still be accepted (and the user should update her[m
+[7m Manual page shadow(5) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           password during the next login).[m
+[7m Manual page shadow(5) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           After expiration of the password and this expiration period is elapsed, no login is[m
+[7m Manual page shadow(5) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           possible using the current user's password. The user should contact her administrator.[m
+[7m Manual page shadow(5) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           An empty field means that there are no enforcement of an inactivity period.[m
+[7m Manual page shadow(5) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1maccount[0m [1mexpiration[0m [1mdate[0m[m
+[7m Manual page shadow(5) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The date of expiration of the account, expressed as the number of days since Jan 1,[m
+[7m Manual page shadow(5) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           1970.[m
+[7m Manual page shadow(5) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Note that an account expiration differs from a password expiration. In case of an[m
+[7m Manual page shadow(5) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           account expiration, the user shall not be allowed to login. In case of a password[m
+[7m Manual page shadow(5) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           expiration, the user is not allowed to login using her password.[m
+[7m Manual page shadow(5) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           An empty field means that the account will never expire.[m
+[7m Manual page shadow(5) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The value 0 should not be used as it is interpreted as either an account with no[m
+[7m Manual page shadow(5) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           expiration, or as an expiration on Jan 1, 1970.[m
+[7m Manual page shadow(5) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mreserved[0m [1mfield[0m[m
+[7m Manual page shadow(5) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This field is reserved for future use.[m
+[7m Manual page shadow(5) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mFILES[0m[m
+[7m Manual page shadow(5) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       /etc/passwd[m
+[7m Manual page shadow(5) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           User account information.[m
+[7m Manual page shadow(5) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       /etc/shadow[m
+[7m Manual page shadow(5) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Secure user account information.[m
+[7m Manual page shadow(5) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       /etc/shadow-[m
+[7m Manual page shadow(5) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           1970.[m
+[21;1H[K[7m Manual page shadow(5) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           The date of expiration of the account, expressed as the number of days since Jan 1,[m
+[21;1H[K[7m Manual page shadow(5) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1maccount[0m [1mexpiration[0m [1mdate[0m[m
+[21;1H[K[7m Manual page shadow(5) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           An empty field means that there are no enforcement of an inactivity period.[m
+[21;1H[K[7m Manual page shadow(5) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           possible using the current user's password. The user should contact her administrator.[m
+[21;1H[K[7m Manual page shadow(5) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           After expiration of the password and this expiration period is elapsed, no login is[m
+[21;1H[K[7m Manual page shadow(5) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           password during the next login).[m
+[21;1H[K[7m Manual page shadow(5) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           during which the password should still be accepted (and the user should update her[m
+[21;1H[K[7m Manual page shadow(5) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           The number of days after a password has expired (see the maximum password age above)[m
+[21;1H[K[7m Manual page shadow(5) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mpassword[0m [1minactivity[0m [1mperiod[0m[m
+[21;1H[K[7m Manual page shadow(5) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           An empty field and value 0 mean that there are no password warning period.[m
+[21;1H[K[7m Manual page shadow(5) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           above) during which the user should be warned.[m
+[21;1H[K[7m Manual page shadow(5) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           The number of days before a password is going to expire (see the maximum password age[m
+[21;1H[K[7m Manual page shadow(5) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mpassword[0m [1mwarning[0m [1mperiod[0m[m
+[21;1H[K[7m Manual page shadow(5) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           change her password.[m
+[21;1H[K[7m Manual page shadow(5) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           If the maximum password age is lower than the minimum password age, the user cannot[m
+[21;1H[K[7m Manual page shadow(5) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           and no password inactivity period (see below).[m
+[21;1H[K[7m Manual page shadow(5) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           An empty field means that there are no maximum password age, no password warning period,[m
+[21;1H[K[7m Manual page shadow(5) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           be asked to change her password the next time she will log in.[m
+[21;1H[K[7m Manual page shadow(5) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           After this number of days is elapsed, the password may still be valid. The user should[m
+[21;1H[K[7m Manual page shadow(5) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           her password.[m
+[21;1H[K[7m Manual page shadow(5) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           The maximum password age is the number of days after which the user will have to change[m
+[21;1H[K[7m Manual page shadow(5) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mmaximum[0m [1mpassword[0m [1mage[0m[m
+[21;1H[K[7m Manual page shadow(5) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           An empty field and value 0 mean that there are no minimum password age.[m
+[21;1H[K[7m Manual page shadow(5) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           will be allowed to change her password again.[m
+[21;1H[K[7m Manual page shadow(5) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           The minimum password age is the number of days the user will have to wait before she[m
+[21;1H[K[7m Manual page shadow(5) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mminimum[0m [1mpassword[0m [1mage[0m[m
+[21;1H[K[7m Manual page shadow(5) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           An empty field means that password aging features are disabled.[m
+[21;1H[K[7m Manual page shadow(5) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           next time she will log in the system.[m
+[21;1H[K[7m Manual page shadow(5) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           The value 0 has a special meaning, which is that the user should change her password the[m
+[21;1H[K[7m Manual page shadow(5) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           The date of the last password change, expressed as the number of days since Jan 1, 1970.[m
+[21;1H[K[7m Manual page shadow(5) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdate[0m [1mof[0m [1mlast[0m [1mpassword[0m [1mchange[0m[m
+[21;1H[K[7m Manual page shadow(5) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           user may log in the system by other means).[m
+[21;1H[K[7m Manual page shadow(5) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           instance ! or *, the user will not be able to use a unix password to log in (but the[m
+[21;1H[K[7m Manual page shadow(5) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           If the password field contains some string that is not a valid result of [1mcrypt[0m(3), for[m
+[21;1H[K[7m Manual page shadow(5) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           Refer to [1mcrypt[0m(3) for details on how this string is interpreted.[m
+[21;1H[K[7m Manual page shadow(5) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           password was locked.[m
+[21;1H[K[7m Manual page shadow(5) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           locked. The remaining characters on the line represent the password field before the[m
+[21;1H[K[7m Manual page shadow(5) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           A password field which starts with an exclamation mark means that the password is[m
+[21;1H[K[7m Manual page shadow(5) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           decide not to permit any access at all if the password field is empty.[m
+[21;1H[K[7m Manual page shadow(5) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           specified login name. However, some applications which read the /etc/shadow file may[m
+[21;1H[K[7m Manual page shadow(5) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           This field may be empty, in which case no passwords are required to authenticate as the[m
+[21;1H[K[7m Manual page shadow(5) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mencrypted[0m [1mpassword[0m[m
+[21;1H[K[7m Manual page shadow(5) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           It must be a valid account name, which exist on the system.[m
+[21;1H[K[7m Manual page shadow(5) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mlogin[0m [1mname[0m[m
+[21;1H[K[7m Manual page shadow(5) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Each line of this file contains 9 fields, separated by colons (“:”), in the following order:[m
+[21;1H[K[7m Manual page shadow(5) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       This file must not be readable by regular users if password security is to be maintained.[m
+[21;1H[K[7m Manual page shadow(5) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[21;1H[K[7m Manual page shadow(5) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       optional aging information.[m
+[21;1H[K[7m Manual page shadow(5) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       shadow is a file which contains the password information for the system's accounts and[m
+[21;1H[K[7m Manual page shadow(5) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[21;1H[K[7m Manual page shadow(5) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Refer to [1mcrypt[0m(3) for details on how this string is interpreted.[m
+[7m Manual page shadow(5) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If the password field contains some string that is not a valid result of [1mcrypt[0m(3), for[m
+[7m Manual page shadow(5) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           instance ! or *, the user will not be able to use a unix password to log in (but the[m
+[7m Manual page shadow(5) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           user may log in the system by other means).[m
+[7m Manual page shadow(5) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mdate[0m [1mof[0m [1mlast[0m [1mpassword[0m [1mchange[0m[m
+[7m Manual page shadow(5) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The date of the last password change, expressed as the number of days since Jan 1, 1970.[m
+[7m Manual page shadow(5) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The value 0 has a special meaning, which is that the user should change her password the[m
+[7m Manual page shadow(5) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           next time she will log in the system.[m
+[7m Manual page shadow(5) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           An empty field means that password aging features are disabled.[m
+[7m Manual page shadow(5) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mminimum[0m [1mpassword[0m [1mage[0m[m
+[7m Manual page shadow(5) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The minimum password age is the number of days the user will have to wait before she[m
+[7m Manual page shadow(5) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           will be allowed to change her password again.[m
+[7m Manual page shadow(5) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           An empty field and value 0 mean that there are no minimum password age.[m
+[7m Manual page shadow(5) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page shadow(5) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mmaximum[0m [1mpassword[0m [1mage[0m[m
+[7m Manual page shadow(5) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The maximum password age is the number of days after which the user will have to change[m
+[7m Manual page shadow(5) line 28 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ man passwd
+[?2004l[?1049h[22;0;0t[?1h=PASSWD(1)                                  User Commands                                  PASSWD(1)[m
+[m
+[1mNAME[0m[m
+       passwd - change user password[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mpasswd[0m [[4moptions[24m] [[4mLOGIN[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       The [1mpasswd[0m command changes passwords for user accounts. A normal user may only change the[m
+       password for their own account, while the superuser may change the password for any account.[m
+       [1mpasswd[0m also changes the account or associated password validity period.[m
+[m
+   [1mPassword[0m [1mChanges[0m[m
+       The user is first prompted for their old password, if one is present. This password is then[m
+       encrypted and compared against the stored password. The user has only one chance to enter[m
+       the correct password. The superuser is permitted to bypass this step so that forgotten[m
+       passwords may be changed.[m
+[m
+       After the password has been entered, password aging information is checked to see if the[m
+[7m Manual page passwd(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       user is permitted to change the password at this time. If not, [1mpasswd[0m refuses to change the[m
+[7m Manual page passwd(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       password and exits.[m
+[7m Manual page passwd(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The user is then prompted twice for a replacement password. The second entry is compared[m
+[7m Manual page passwd(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       against the first and both are required to match in order for the password to be changed.[m
+[7m Manual page passwd(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Then, the password is tested for complexity. As a general guideline, passwords should[m
+[7m Manual page passwd(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       consist of 6 to 8 characters including one or more characters from each of the following[m
+[7m Manual page passwd(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       sets:[m
+[7m Manual page passwd(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   lower case alphabetics[m
+[7m Manual page passwd(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   digits 0 thru 9[m
+[7m Manual page passwd(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   punctuation marks[m
+[7m Manual page passwd(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Care must be taken not to include the system default erase or kill characters.  [1mpasswd[0m will[m
+[7m Manual page passwd(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       reject any password which is not suitably complex.[m
+[7m Manual page passwd(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mHints[0m [1mfor[0m [1muser[0m [1mpasswords[0m[m
+[7m Manual page passwd(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The security of a password depends upon the strength of the encryption algorithm and the[m
+[7m Manual page passwd(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       size of the key space. The legacy [4mUNIX[24m System encryption method is based on the NBS DES[m
+[7m Manual page passwd(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       algorithm. More recent methods are now recommended (see [1mENCRYPT_METHOD[0m). The size of the key[m
+[7m Manual page passwd(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       space depends upon the randomness of the password which is selected.[m
+[7m Manual page passwd(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Compromises in password security normally result from careless password selection or[m
+[7m Manual page passwd(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       handling. For this reason, you should not select a password which appears in a dictionary or[m
+[7m Manual page passwd(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       which must be written down. The password should also not be a proper name, your license[m
+[7m Manual page passwd(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       number, birth date, or street address. Any of these may be used as guesses to violate system[m
+[7m Manual page passwd(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       security.[m
+[7m Manual page passwd(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       You can find advice on how to choose a strong password on[m
+[7m Manual page passwd(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       http://en.wikipedia.org/wiki/Password_strength[m
+[7m Manual page passwd(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mOPTIONS[0m[m
+[7m Manual page passwd(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The options which apply to the [1mpasswd[0m command are:[m
+[7m Manual page passwd(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-a[0m, [1m--all[0m[m
+[7m Manual page passwd(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This option can be used only with [1m-S[0m and causes show status for all users.[m
+[7m Manual page passwd(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m, [1m--delete[0m[m
+[7m Manual page passwd(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Delete a user's password (make it empty). This is a quick way to disable a password for[m
+[7m Manual page passwd(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           an account. It will set the named account passwordless.[m
+[7m Manual page passwd(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-e[0m, [1m--expire[0m[m
+[7m Manual page passwd(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Immediately expire an account's password. This in effect can force a user to change[m
+[7m Manual page passwd(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           their password at the user's next login.[m
+[7m Manual page passwd(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-h[0m, [1m--help[0m[m
+[7m Manual page passwd(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Display help message and exit.[m
+[7m Manual page passwd(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-i[0m, [1m--inactive[0m [4mINACTIVE[24m[m
+[7m Manual page passwd(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This option is used to disable an account after the password has been expired for a[m
+[7m Manual page passwd(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           number of days. After a user account has had an expired password for [4mINACTIVE[24m days, the[m
+[7m Manual page passwd(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           user may no longer sign on to the account.[m
+[7m Manual page passwd(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-k[0m, [1m--keep-tokens[0m[m
+[7m Manual page passwd(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Indicate password change should be performed only for expired authentication tokens[m
+[7m Manual page passwd(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           (passwords). The user wishes to keep their non-expired tokens as before.[m
+[7m Manual page passwd(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-l[0m, [1m--lock[0m[m
+[7m Manual page passwd(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Lock the password of the named account. This option disables a password by changing it[m
+[7m Manual page passwd(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           to a value which matches no possible encrypted value (it adds a ´!´ at the beginning of[m
+[7m Manual page passwd(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the password).[m
+[7m Manual page passwd(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Note that this does not disable the account. The user may still be able to login using[m
+[7m Manual page passwd(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           another authentication token (e.g. an SSH key). To disable the account, administrators[m
+[7m Manual page passwd(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           should use [1musermod[0m [1m--expiredate[0m [1m1[0m (this set the account's expire date to Jan 2, 1970).[m
+[7m Manual page passwd(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Users with a locked password are not allowed to change their password.[m
+[7m Manual page passwd(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-n[0m, [1m--mindays[0m [4mMIN_DAYS[24m[m
+[7m Manual page passwd(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Set the minimum number of days between password changes to [4mMIN_DAYS[24m. A value of zero for[m
+[7m Manual page passwd(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           this field indicates that the user may change their password at any time.[m
+[7m Manual page passwd(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-q[0m, [1m--quiet[0m[m
+[7m Manual page passwd(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Quiet mode.[m
+[7m Manual page passwd(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-r[0m, [1m--repository[0m [4mREPOSITORY[24m[m
+[7m Manual page passwd(1) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           change password in [4mREPOSITORY[24m repository[m
+[7m Manual page passwd(1) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-R[0m, [1m--root[0m [4mCHROOT_DIR[24m[m
+[7m Manual page passwd(1) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Apply changes in the [4mCHROOT_DIR[24m directory and use the configuration files from the[m
+[7m Manual page passwd(1) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [4mCHROOT_DIR[24m directory.[m
+[7m Manual page passwd(1) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-S[0m, [1m--status[0m[m
+[7m Manual page passwd(1) line 87 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Display account status information. The status information consists of 7 fields. The[m
+[7m Manual page passwd(1) line 88 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           first field is the user's login name. The second field indicates if the user account has[m
+[7m Manual page passwd(1) line 89 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           a locked password (L), has no password (NP), or has a usable password (P). The third[m
+[7m Manual page passwd(1) line 90 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           field gives the date of the last password change. The next four fields are the minimum[m
+[7m Manual page passwd(1) line 91 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           age, maximum age, warning period, and inactivity period for the password. These ages are[m
+[7m Manual page passwd(1) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           expressed in days.[m
+[7m Manual page passwd(1) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-u[0m, [1m--unlock[0m[m
+[7m Manual page passwd(1) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Unlock the password of the named account. This option re-enables a password by changing[m
+[7m Manual page passwd(1) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the password back to its previous value (to the value before using the [1m-l[0m option).[m
+[7m Manual page passwd(1) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-w[0m, [1m--warndays[0m [4mWARN_DAYS[24m[m
+[7m Manual page passwd(1) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Set the number of days of warning before a password change is required. The [4mWARN_DAYS[24m[m
+[7m Manual page passwd(1) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           option is the number of days prior to the password expiring that a user will be warned[m
+[7m Manual page passwd(1) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           that their password is about to expire.[m
+[7m Manual page passwd(1) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-x[0m, [1m--maxdays[0m [4mMAX_DAYS[24m[m
+[7m Manual page passwd(1) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Set the maximum number of days a password remains valid. After [4mMAX_DAYS[24m, the password is[m
+[7m Manual page passwd(1) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           required to be changed.[m
+[7m Manual page passwd(1) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Passing the number [4m-1[24m as [4mMAX_DAYS[24m will remove checking a password's validity.[m
+[7m Manual page passwd(1) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCAVEATS[0m[m
+[7m Manual page passwd(1) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Password complexity checking may vary from site to site. The user is urged to select a[m
+[7m Manual page passwd(1) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       password as complex as he or she feels comfortable with.[m
+[7m Manual page passwd(1) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page passwd(1) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Users may not be able to change their password on a system if NIS is enabled and they are[m
+[7m Manual page passwd(1) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       not logged into the NIS server.[m
+[7m Manual page passwd(1) line 115 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ passwd -S
+[?2004lvagrant P 03/27/2025 0 99999 7 -1
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ useradd -h
+[?2004lUsage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+      --badnames                do not check for bad names
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+      --btrfs-subvolume-home    use BTRFS subvolume for home directory
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [K]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [K]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ useradd user01 [1@s[C[1@u[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C - - b a s e - d i r [C [K]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo useradd user01 --base-dir  [1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[K[1@-[1@m[1@ [1@-[1@d[1@ [1@/[1@h[1@o[1@m[1@e[1@/[C[1@u[1@s[1@e[1@r[1@0[1@1[1@ [1@-[1@s[1@ [1@/[1@b[1@i[1@n[1@/[1@s[1@h[1@ -user01   [A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cguser01
+ [A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C user01  [A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuser01[C [A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csuser0[1@1[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceuser[1@0[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cruse[1@r[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0us[1@e[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1u[1@s[1@ [1@-[1@e[1@ [1@2[1@0[1@2[1@6[1@-[1@1[1@2[1@-[1@1[1@3[1@ 
+[?2004luseradd: group 'user01' does not exist
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo useradd -m -d /home/user01 -s /bin/sh -g user01 -e 2026-12-13 user01  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -e[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -e [1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -e 2[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -e 20[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -e 202[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-e 2026[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -e 2026-[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CU -e 2026[1@-[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-e 2026-[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce 2026-1[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 2026-12[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2026-12-[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C026-12-1[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C26-12-13[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6-12-13 [1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-12-13 u[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C12-13 us[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2-13 use[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-13 user[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C13 user0[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3 user01[1P[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C user01 [C[K[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuser01  [K[A]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cser01 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[C[K[1P [1P [K[1P [1P [1P [1P [1P [1P [1P [K[1P [1P [K[1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [K[1P [1P [K[1P [1P [K[1P [1P [1P [1P [1P [1P [1P g r o u p a d d [C u s e r 0 1 
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo groupadd user01 useradd -m -d /home/user01 -s /bin/sh -g user01 -e 2026-12-13 user01  
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ cat /etc/passwd ~ [K[K/[K/[KЭ[K,[K| grep user01
+[?2004l[01;31m[Kuser01[m[K:x:1002:1002::/home/[01;31m[Kuser01[m[K:/bin/sh
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo chage -l user01
+[?2004lLast password change					: Apr 03, 2025
+Password expires					: never
+Password inactive					: never
+Account expires						: Dec 13, 2026
+Minimum number of days between password change		: 0
+Maximum number of days between password change		: 99999
+Number of days of warning before password expires	: 7
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ ps[Kasswdspasswdupasswddpasswdopasswd passwd[C[C[C[C[C[C user01
+[?2004lNew password: 
+Retype new password: 
+passwd: password updated successfully
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ su user01
+[?2004lPassword: 
+$ whoami
+user01
+$ cd /home/user01
+$ pwd
+/home/user01
+$ ls
+$ man chfn
+[?1049h[22;0;0t[?1h=CHFN(1)                        User Commands                       CHFN(1)[m
+[m
+[1mNAME[0m[m
+       chfn - change real user name and information[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mchfn[0m [[4moptions[24m] [[4mLOGIN[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       The [1mchfn[0m command changes user fullname, office room number, office[m
+       phone number, and home phone number information for a user's[m
+       account. This information is typically printed by [1mfinger[0m(1) and[m
+       similar programs. A normal user may only change the fields for her[m
+       own account, subject to the restrictions in /etc/login.defs. (The[m
+       default configuration is to prevent users from changing their[m
+       fullname.) The superuser may change any field for any account.[m
+       Additionally, only the superuser may use the [1m-o[0m option to change[m
+       the undefined portions of the GECOS field.[m
+[m
+       These fields must not contain any colons. Except for the [4mother[24m[m
+       field, they should not contain any comma or equal sign. It is also[m
+       recommended to avoid non-US-ASCII characters, but this is only[m
+       enforced for the phone numbers. The [4mother[24m field is used to store[m
+       accounting information used by other applications.[m
+[m
+[1mOPTIONS[0m[m
+       The options which apply to the [1mchfn[0m command are:[m
+[m
+       [1m-f[0m, [1m--full-name[0m [4mFULL_NAME[24m[m
+           Change the user's full name.[m
+[m
+       [1m-h[0m, [1m--home-phone[0m [4mHOME_PHONE[24m[m
+           Change the user's home phone number.[m
+[m
+       [1m-o[0m, [1m--other[0m [4mOTHER[24m[m
+           Change the user's other GECOS information. This field is used[m
+           to store accounting information used by other applications, and[m
+           can be changed only by a superuser.[m
+[m
+       [1m-r[0m, [1m--room[0m [4mROOM_NUMBER[24m[m
+[7m Manual page chfn(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Change the user's room number.[m
+[7m Manual page chfn(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-R[0m, [1m--root[0m [4mCHROOT_DIR[24m[m
+[7m Manual page chfn(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Apply changes in the [4mCHROOT_DIR[24m directory and use the[m
+[7m Manual page chfn(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           configuration files from the [4mCHROOT_DIR[24m directory.[m
+[7m Manual page chfn(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-u[0m, [1m--help[0m[m
+[7m Manual page chfn(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Display help message and exit.[m
+[7m Manual page chfn(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-w[0m, [1m--work-phone[0m [4mWORK_PHONE[24m[m
+[7m Manual page chfn(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Change the user's office phone number.[m
+[7m Manual page chfn(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If none of the options are selected, [1mchfn[0m operates in an[m
+[7m Manual page chfn(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       interactive fashion, prompting the user with the current values for[m
+[7m Manual page chfn(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       all of the fields. Enter the new value to change the field, or[m
+[7m Manual page chfn(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       leave the line blank to use the current value. The current value is[m
+[7m Manual page chfn(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       displayed between a pair of [1m[[0m [1m][0m marks. Without options, [1mchfn[0m[m
+[7m Manual page chfn(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       prompts for the current user account.[m
+[7m Manual page chfn(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCONFIGURATION[0m[m
+[7m Manual page chfn(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The following configuration variables in /etc/login.defs change the[m
+[7m Manual page chfn(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       behavior of this tool:[m
+[7m Manual page chfn(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mCHFN_RESTRICT[0m (string)[m
+[7m Manual page chfn(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This parameter specifies which values in the [4mgecos[24m field of the[m
+[7m Manual page chfn(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           /etc/passwd file may be changed by regular users using the [1mchfn[0m[m
+[7m Manual page chfn(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           program. It can be any combination of letters [4mf[24m, [4mr[24m, [4mw[24m, [4mh[24m, for[m
+[7m Manual page chfn(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Full name, Room number, Work phone, and Home phone,[m
+[7m Manual page chfn(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           respectively. For backward compatibility, [4myes[24m is equivalent to[m
+[7m Manual page chfn(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [4mrwh[24m and [4mno[24m is equivalent to [4mfrwh[24m. If not specified, only the[m
+[7m Manual page chfn(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           superuser can make any changes. The most restrictive setting is[m
+[7m Manual page chfn(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           better achieved by not installing [1mchfn[0m SUID.[m
+[7m Manual page chfn(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mFILES[0m[m
+[7m Manual page chfn(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       /etc/login.defs[m
+[7m Manual page chfn(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Shadow password suite configuration.[m
+[7m Manual page chfn(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       /etc/passwd[m
+[7m Manual page chfn(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           User account information.[m
+[7m Manual page chfn(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page chfn(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mchsh[0m(1), [1mlogin.defs[0m(5), [1mpasswd[0m(5).[m
+[7m Manual page chfn(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Kshadow-utils 4.8.1              02/06/2024                         CHFN(1)[m
+[7m Manual page chfn(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t$ sudo chfn user01
+[sudo] password for user01: 
+user01 is not in the sudoers file.  This incident will be reported.
+$ finger user01
+sh: 7: finger: not found
+$ man chfn
+[?1049h[22;0;0t[?1h=CHFN(1)                        User Commands                       CHFN(1)[m
+[m
+[1mNAME[0m[m
+       chfn - change real user name and information[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mchfn[0m [[4moptions[24m] [[4mLOGIN[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       The [1mchfn[0m command changes user fullname, office room number, office[m
+       phone number, and home phone number information for a user's[m
+       account. This information is typically printed by [1mfinger[0m(1) and[m
+       similar programs. A normal user may only change the fields for her[m
+       own account, subject to the restrictions in /etc/login.defs. (The[m
+       default configuration is to prevent users from changing their[m
+       fullname.) The superuser may change any field for any account.[m
+       Additionally, only the superuser may use the [1m-o[0m option to change[m
+       the undefined portions of the GECOS field.[m
+[m
+       These fields must not contain any colons. Except for the [4mother[24m[m
+       field, they should not contain any comma or equal sign. It is also[m
+       recommended to avoid non-US-ASCII characters, but this is only[m
+       enforced for the phone numbers. The [4mother[24m field is used to store[m
+       accounting information used by other applications.[m
+[m
+[1mOPTIONS[0m[m
+       The options which apply to the [1mchfn[0m command are:[m
+[m
+       [1m-f[0m, [1m--full-name[0m [4mFULL_NAME[24m[m
+           Change the user's full name.[m
+[m
+       [1m-h[0m, [1m--home-phone[0m [4mHOME_PHONE[24m[m
+           Change the user's home phone number.[m
+[m
+       [1m-o[0m, [1m--other[0m [4mOTHER[24m[m
+           Change the user's other GECOS information. This field is used[m
+           to store accounting information used by other applications, and[m
+           can be changed only by a superuser.[m
+[m
+       [1m-r[0m, [1m--room[0m [4mROOM_NUMBER[24m[m
+[7m Manual page chfn(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Change the user's room number.[m
+[7m Manual page chfn(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-R[0m, [1m--root[0m [4mCHROOT_DIR[24m[m
+[7m Manual page chfn(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Apply changes in the [4mCHROOT_DIR[24m directory and use the[m
+[7m Manual page chfn(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           configuration files from the [4mCHROOT_DIR[24m directory.[m
+[7m Manual page chfn(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-u[0m, [1m--help[0m[m
+[7m Manual page chfn(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Display help message and exit.[m
+[7m Manual page chfn(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-w[0m, [1m--work-phone[0m [4mWORK_PHONE[24m[m
+[7m Manual page chfn(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Change the user's office phone number.[m
+[7m Manual page chfn(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If none of the options are selected, [1mchfn[0m operates in an[m
+[7m Manual page chfn(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       interactive fashion, prompting the user with the current values for[m
+[7m Manual page chfn(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       all of the fields. Enter the new value to change the field, or[m
+[7m Manual page chfn(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       leave the line blank to use the current value. The current value is[m
+[7m Manual page chfn(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       displayed between a pair of [1m[[0m [1m][0m marks. Without options, [1mchfn[0m[m
+[7m Manual page chfn(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       prompts for the current user account.[m
+[7m Manual page chfn(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCONFIGURATION[0m[m
+[7m Manual page chfn(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       These fields must not contain any colons. Except for the [4mother[24m[m
+[41;1H[K[7m Manual page chfn(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[41;1H[K[7m Manual page chfn(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       the undefined portions of the GECOS field.[m
+[41;1H[K[7m Manual page chfn(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Additionally, only the superuser may use the [1m-o[0m option to change[m
+[41;1H[K[7m Manual page chfn(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       fullname.) The superuser may change any field for any account.[m
+[41;1H[K[7m Manual page chfn(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       default configuration is to prevent users from changing their[m
+[41;1H[K[7m Manual page chfn(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       own account, subject to the restrictions in /etc/login.defs. (The[m
+[41;1H[K[7m Manual page chfn(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       similar programs. A normal user may only change the fields for her[m
+[41;1H[K[7m Manual page chfn(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       account. This information is typically printed by [1mfinger[0m(1) and[m
+[41;1H[K[7m Manual page chfn(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       phone number, and home phone number information for a user's[m
+[41;1H[K[7m Manual page chfn(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       The [1mchfn[0m command changes user fullname, office room number, office[m
+[41;1H[K[7m Manual page chfn(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-w[0m, [1m--work-phone[0m [4mWORK_PHONE[24m[m
+[7m Manual page chfn(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Change the user's office phone number.[m
+[7m Manual page chfn(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If none of the options are selected, [1mchfn[0m operates in an[m
+[7m Manual page chfn(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       interactive fashion, prompting the user with the current values for[m
+[7m Manual page chfn(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       all of the fields. Enter the new value to change the field, or[m
+[7m Manual page chfn(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       leave the line blank to use the current value. The current value is[m
+[7m Manual page chfn(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       displayed between a pair of [1m[[0m [1m][0m marks. Without options, [1mchfn[0m[m
+[7m Manual page chfn(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       prompts for the current user account.[m
+[7m Manual page chfn(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCONFIGURATION[0m[m
+[7m Manual page chfn(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The following configuration variables in /etc/login.defs change the[m
+[7m Manual page chfn(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       behavior of this tool:[m
+[7m Manual page chfn(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mCHFN_RESTRICT[0m (string)[m
+[7m Manual page chfn(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This parameter specifies which values in the [4mgecos[24m field of the[m
+[7m Manual page chfn(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           /etc/passwd file may be changed by regular users using the [1mchfn[0m[m
+[7m Manual page chfn(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           program. It can be any combination of letters [4mf[24m, [4mr[24m, [4mw[24m, [4mh[24m, for[m
+[7m Manual page chfn(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Full name, Room number, Work phone, and Home phone,[m
+[7m Manual page chfn(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           respectively. For backward compatibility, [4myes[24m is equivalent to[m
+[7m Manual page chfn(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [4mrwh[24m and [4mno[24m is equivalent to [4mfrwh[24m. If not specified, only the[m
+[7m Manual page chfn(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           superuser can make any changes. The most restrictive setting is[m
+[7m Manual page chfn(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           better achieved by not installing [1mchfn[0m SUID.[m
+[7m Manual page chfn(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mFILES[0m[m
+[7m Manual page chfn(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       /etc/login.defs[m
+[7m Manual page chfn(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Shadow password suite configuration.[m
+[7m Manual page chfn(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       /etc/passwd[m
+[7m Manual page chfn(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           User account information.[m
+[7m Manual page chfn(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page chfn(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mchsh[0m(1), [1mlogin.defs[0m(5), [1mpasswd[0m(5).[m
+[7m Manual page chfn(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page chfn(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Kshadow-utils 4.8.1              02/06/2024                         CHFN(1)[m
+[7m Manual page chfn(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page chfn(1) line 45/84 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t$ sudo chfn^[[D^[[D                 срат    chfn -f "Sam Smith" -w ""^[[D+      +1234567890" user01
+sh: 9: срchfn: not found
+$ chfn -f "John Doe" -r 101 -w "+1234567890" -h "+0987654321" -o "DevOps Engineer" user01^[[D^[[D        ^[[D                                               ^[[B^[[A^[[A^[[B^[[B^[[B                                              ^C
+$ chfn -f ""^[[D     Sam Smith" user01
+chfn: Permission denied.
+$ ^[[A^[[B        sudo chfn -f "Sam Smith" user01
+[sudo] password for user01: 
+user01 is not in the sudoers file.  This incident will be reported.
+$ ыгвщ фзе        sudo apt install finger
+sh: 12: ыгв�sudo: not found
+$ exit
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo apt install finger
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  finger
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 16.9 kB of archives.
+After this operation, 51.2 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 finger amd64 0.17-17 [16.9 kB]
+[33m0% [1 finger 0 B/16.9 kB 0%][0m[33m                            100% [Working][0m              Fetched 16.9 kB in 0s (82.9 kB/s)
+
+7[0;40r8[1ASelecting previously unselected package finger.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93746 files and directories currently installed.)
+Preparing to unpack .../finger_0.17-17_amd64.deb ...
+7[41;0f[42m[30mProgress: [  0%][49m[39m [......................................................] 87[41;0f[42m[30mProgress: [ 20%][49m[39m [##########............................................] 8Unpacking finger (0.17-17) ...
+7[41;0f[42m[30mProgress: [ 40%][49m[39m [#####################.................................] 8Setting up finger (0.17-17) ...
+7[41;0f[42m[30mProgress: [ 60%][49m[39m [################################......................] 87[41;0f[42m[30mProgress: [ 80%][49m[39m [###########################################...........] 8Processing triggers for man-db (2.10.2-1) ...
+
+7[0;41r8[1A[JScanning processes... [                                                    ]Scanning processes... [                                                    ]Scanning processes... [                                                    ]Scanning processes... [=                                                   ]Scanning processes... [=                                                   ]Scanning processes... [==                                                  ]Scanning processes... [==                                                  ]Scanning processes... [===                                                 ]Scanning processes... [===                                                 ]Scanning processes... [====                                                ]Scanning processes... [====                                                ]Scanning processes... [=====                                               ]Scanning processes... [=====                                               ]Scanning processes... [======                                              ]Scanning processes... [======                                              ]Scanning processes... [=======                                             ]Scanning processes... [=======                                             ]Scanning processes... [========                                            ]Scanning processes... [========                                            ]Scanning processes... [=========                                           ]Scanning processes... [=========                                           ]Scanning processes... [==========                                          ]Scanning processes... [==========                                          ]Scanning processes... [===========                                         ]Scanning processes... [===========                                         ]Scanning processes... [============                                        ]Scanning processes... [============                                        ]Scanning processes... [=============                                       ]Scanning processes... [=============                                       ]Scanning processes... [==============                                      ]Scanning processes... [==============                                      ]Scanning processes... [===============                                     ]Scanning processes... [===============                                     ]Scanning processes... [================                                    ]Scanning processes... [================                                    ]Scanning processes... [=================                                   ]Scanning processes... [=================                                   ]Scanning processes... [=================                                   ]Scanning processes... [==================                                  ]Scanning processes... [==================                                  ]Scanning processes... [===================                                 ]Scanning processes... [===================                                 ]Scanning processes... [====================                                ]Scanning processes... [====================                                ]Scanning processes... [=====================                               ]Scanning processes... [=====================                               ]Scanning processes... [======================                              ]Scanning processes... [======================                              ]Scanning processes... [=======================                             ]Scanning processes... [=======================                             ]Scanning processes... [========================                            ]Scanning processes... [========================                            ]Scanning processes... [=========================                           ]Scanning processes... [=========================                           ]Scanning processes... [==========================                          ]Scanning processes... [==========================                          ]Scanning processes... [===========================                         ]Scanning processes... [===========================                         ]Scanning processes... [============================                        ]Scanning processes... [============================                        ]Scanning processes... [=============================                       ]Scanning processes... [=============================                       ]Scanning processes... [==============================                      ]Scanning processes... [==============================                      ]Scanning processes... [===============================                     ]Scanning processes... [===============================                     ]Scanning processes... [================================                    ]Scanning processes... [================================                    ]Scanning processes... [=================================                   ]Scanning processes... [=================================                   ]Scanning processes... [==================================                  ]Scanning processes... [==================================                  ]Scanning processes... [==================================                  ]Scanning processes... [===================================                 ]Scanning processes... [===================================                 ]Scanning processes... [====================================                ]Scanning processes... [====================================                ]Scanning processes... [=====================================               ]Scanning processes... [=====================================               ]Scanning processes... [======================================              ]Scanning processes... [======================================              ]Scanning processes... [=======================================             ]Scanning processes... [=======================================             ]Scanning processes... [========================================            ]Scanning processes... [========================================            ]Scanning processes... [=========================================           ]Scanning processes... [=========================================           ]Scanning processes... [==========================================          ]Scanning processes... [==========================================          ]Scanning processes... [===========================================         ]Scanning processes... [===========================================         ]Scanning processes... [============================================        ]Scanning processes... [============================================        ]Scanning processes... [=============================================       ]Scanning processes... [=============================================       ]Scanning processes... [==============================================      ]Scanning processes... [==============================================      ]Scanning processes... [===============================================     ]Scanning processes... [===============================================     ]Scanning processes... [================================================    ]Scanning processes... [================================================    ]Scanning processes... [=================================================   ]Scanning processes... [=================================================   ]Scanning processes... [==================================================  ]Scanning processes... [==================================================  ]Scanning processes... [=================================================== ]Scanning processes... [=================================================== ]Scanning processes... [====================================================]Scanning processes...                                                       
+Scanning linux images... [                                                 ]Scanning linux images... [============                                     ]Scanning linux images... [========================                         ]Scanning linux images... [====================================             ]Scanning linux images... [=================================================]Scanning linux images...                                                    
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ finger user01
+[?2004lLogin: user01         			Name: 
+Directory: /home/user01             	Shell: /bin/sh
+Never logged in.
+No mail.
+No Plan.
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo usermod -aG sudo user01
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ su user01
+[?2004lPassword: 
+$ chfn -f "" Sam Smith" -w "+1234567890" user01
+chfn: Permission denied.
+$ sudo chfn -f "Sam Smith" -w "+1234567890" user01
+[sudo] password for user01: 
+$ finger user01
+Login: user01         			Name: Sam Smith
+Directory: /home/user01             	Shell: /bin/sh
+Office Phone: +1234567890
+Never logged in.
+No mail.
+No Plan.
+$ exit
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ groups user01
+[?2004luser01 : user01 sudo
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ cat /etc/group | grep sudo
+[?2004l[01;31m[Ksudo[m[K:x:27:ubuntu,user01
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo addgroup group01
+[?2004lAdding group `group01' (GID 1003) ...
+Done.
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo cat /etc/group | grep group01
+[?2004l[01;31m[Kgroup01[m[K:x:1003:
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ su user01
+[?2004lPassword: 
+$  cat /etc/group | grep sudo
+sudo:x:27:ubuntu,user01
+$ groups group01
+groups: ‘group01’: no such user
+$ sudo cat /etc/group | grep group01
+group01:x:1003:
+$ sudo usermod -aG sudo user01           group01 user01
+$ sudo usermod -aG group01 user01      vagrant
+$ man groupmems
+[?1049h[22;0;0t[?1h=GROUPMEMS(8)            System Management Commands            GROUPMEMS(8)[m
+[m
+[1mNAME[0m[m
+       groupmems - administer members of a user's primary group[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mgroupmems[0m -a [4muser_name[24m | -d [4muser_name[24m | [-g [4mgroup_name[24m] | -l | -p[m
+[m
+[1mDESCRIPTION[0m[m
+       The [1mgroupmems[0m command allows a user to administer their own group[m
+       membership list without the requirement of superuser privileges.[m
+       The [1mgroupmems[0m utility is for systems that configure its users to be[m
+       in their own name sake primary group (i.e., guest / guest).[m
+[m
+       Only the superuser, as administrator, can use [1mgroupmems[0m to alter[m
+       the memberships of other groups.[m
+[m
+[1mOPTIONS[0m[m
+       The options which apply to the [1mgroupmems[0m command are:[m
+[m
+       [1m-a[0m, [1m--add[0m [4muser_name[24m[m
+           Add a user to the group membership list.[m
+[m
+           If the /etc/gshadow file exist, and the group has no entry in[m
+           the /etc/gshadow file, a new entry will be created.[m
+[m
+       [1m-d[0m, [1m--delete[0m [4muser_name[24m[m
+           Delete a user from the group membership list.[m
+[m
+           If the /etc/gshadow file exist, the user will be removed from[m
+           the list of members and administrators of the group.[m
+[m
+           If the /etc/gshadow file exist, and the group has no entry in[m
+           the /etc/gshadow file, a new entry will be created.[m
+[m
+       [1m-g[0m, [1m--group[0m [4mgroup_name[24m[m
+           The superuser can specify which group membership list to[m
+           modify.[m
+[m
+       [1m-h[0m, [1m--help[0m[m
+[7m Manual page groupmems(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Display help message and exit.[m
+[7m Manual page groupmems(8) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page groupmems(8) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-l[0m, [1m--list[0m[m
+[7m Manual page groupmems(8) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           List the group membership list.[m
+[7m Manual page groupmems(8) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page groupmems(8) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-p[0m, [1m--purge[0m[m
+[7m Manual page groupmems(8) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Purge all users from the group membership list.[m
+[7m Manual page groupmems(8) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mgroupmems[0m -a [4muser_name[24m | -d [4muser_name[24m | [-g [4mgroup_name[24m] | -l | -p[m
+[41;1H[K[7m Manual page groupmems(8) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[41;1H[K[7m Manual page groupmems(8) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[41;1H[K[7m Manual page groupmems(8) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       groupmems - administer members of a user's primary group[m
+[41;1H[K[7m Manual page groupmems(8) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[41;1H[K[7m Manual page groupmems(8) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-l[0m, [1m--list[0m[m
+[7m Manual page groupmems(8) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           List the group membership list.[m
+[7m Manual page groupmems(8) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page groupmems(8) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-p[0m, [1m--purge[0m[m
+[7m Manual page groupmems(8) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Purge all users from the group membership list.[m
+[7m Manual page groupmems(8) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page groupmems(8) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If the /etc/gshadow file exist, and the group has no entry in[m
+[7m Manual page groupmems(8) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the /etc/gshadow file, a new entry will be created.[m
+[7m Manual page groupmems(8) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page groupmems(8) line 12 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t$ sudo groupmems -g group01 -l
+user01  vagrant 
+$ exit
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ pwd
+[?2004l/home/vagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ cd[K[Kmkdir test
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~[01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ cd test
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ toch[K[Kuch file
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -la file
+[?2004l-rw-rw-r-- 1 vagrant vagrant 0 Apr  3 21:05 file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ chmod 000 file
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -ls file
+[?2004l0 ---------- 1 vagrant vagrant 0 Apr  3 21:05 file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat file
+[?2004lcat: file: Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ echo "hello" > file[K[K[K[K[K[K[K[K[K[K[K[K[Kтест" > file[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksu ubuntu
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ su user01
+[?2004lPassword: 
+$ whoami
+user01
+$ ls -la file
+---------- 1 vagrant vagrant 0 Apr  3 21:05 file
+$ echo "ntcn    test" > file^[[D^[[D^[[D                        тест" fi  > file
+sh: 3: cannot create file: Permission denied
+$ cat file
+cat: file: Permission denied
+$ chmod     exit    chmod 200 file
+chmod: changing permissions of 'file': Operation not permitted
+$ exit
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ chmod 200 file
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -la file
+[?2004l--w------- 1 vagrant vagrant 0 Apr  3 21:05 file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ su user01
+[?2004lPassword: 
+$ echo "test" > file
+sh: 1: cannot create file: Permission denied
+$ ls
+file
+$ ls -l file
+--w------- 1 vagrant vagrant 0 Apr  3 21:05 file
+$ ca  echo "test" > file
+sh: 4: cannot create file: Permission denied
+$ exit
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ echo test[K[K[K[K"test" > file
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat file
+[?2004lcat: file: Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -l file
+[?2004l--w------- 1 vagrant vagrant 5 Apr  3 21:19 file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ whoami
+[?2004lvagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ chmod 2[K[K[K[K[K[K[Kgroups
+[?2004lvagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ chmod 240 file
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ 
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -l file
+[?2004l--w-r----- 1 vagrant vagrant 5 Apr  3 21:19 file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat file
+[?2004lcat: file: Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ chmod 640 fie[Kle
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -l file
+[?2004l-rw-r----- 1 vagrant vagrant 5 Apr  3 21:19 file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat file
+[?2004ltest
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ rmdir dir
+[?2004lrmdir: failed to remove 'dir': No such file or directory
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ mkdir dir
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls
+[?2004l[0m[01;34mdir[0m  file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cd dir
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test/dir[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test/dir[00m$ t[Kecho[K[K[K[Kechp "file 2" > new_file
+[?2004lCommand 'echp' not found, did you mean:
+  command 'echo' from deb coreutils (8.32-4.1ubuntu1.2)
+Try: apt install <deb name>
+[?2004h]0;vagrant@ubuntu-jammy: ~/test/dir[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test/dir[00m$ echo "file 2" > new_file
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test/dir[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test/dir[00m$ ls
+[?2004lnew_file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test/dir[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test/dir[00m$ ls -la
+[?2004ltotal 12
+drwxrwxr-x 2 vagrant vagrant 4096 Apr  3 21:25 [0m[01;34m.[0m
+drwxrwxr-x 3 vagrant vagrant 4096 Apr  3 21:24 [01;34m..[0m
+-rw-rw-r-- 1 vagrant vagrant    7 Apr  3 21:25 new_file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test/dir[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test/dir[00m$ cd ..
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ chmod u-x dir/
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -la
+[?2004ltotal 16
+drwxrwxr-x 3 vagrant vagrant 4096 Apr  3 21:24 [0m[01;34m.[0m
+drwxr-x--- 7 vagrant vagrant 4096 Apr  3 21:03 [01;34m..[0m
+drw-rwxr-x 2 vagrant vagrant 4096 Apr  3 21:25 [01;34mdir[0m
+-rw-r----- 1 vagrant vagrant    5 Apr  3 21:19 file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cd dir/
+[?2004lbash: cd: dir/: Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat dir/new_file
+[?2004lcat: dir/new_file: Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ rm dir/new_file
+[?2004lrm: cannot remove 'dir/new_file': Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -ld dir
+[?2004ldrw-rwxr-x 2 vagrant vagrant 4096 Apr  3 21:25 [0m[01;34mdir[0m
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls
+[?2004l[0m[01;34mdir[0m  file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ sudo chown foot[K[K[K[Kroot file
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ whoami
+[?2004lvagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -la file
+[?2004l-rw-r----- 1 root vagrant 5 Apr  3 21:19 file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ech[K[K[Krm[K[Kgroups vagrant
+[?2004lvagrant : vagrant group01
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ chown root file
+[?2004lchown: changing ownership of 'file': Operation not permitted
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ chgrp root file
+[?2004lchgrp: changing group of 'file': Operation not permitted
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ umask
+[?2004l0002
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ umask 0077
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ touch file1
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -l file1
+[?2004l-rw------- 1 vagrant vagrant 0 Apr  3 21:47 file1
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ umask 0000
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ touch file2
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -l file2
+[?2004l-rw-rw-rw- 1 vagrant vagrant 0 Apr  3 21:47 file2
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ umask -S
+[?2004lu=rwx,g=rwx,o=rwx
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ umask 0022
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ sudo su
+[?2004l[?2004h]0;root@ubuntu-jammy: /home/vagrant/testroot@ubuntu-jammy:/home/vagrant/test# chown root:root file
+[?2004l[?2004h]0;root@ubuntu-jammy: /home/vagrant/testroot@ubuntu-jammy:/home/vagrant/test# chmod 600 file
+[?2004l[?2004h]0;root@ubuntu-jammy: /home/vagrant/testroot@ubuntu-jammy:/home/vagrant/test# ls -l file
+[?2004l-rw------- 1 root root 5 Apr  3 21:19 file
+[?2004h]0;root@ubuntu-jammy: /home/vagrant/testroot@ubuntu-jammy:/home/vagrant/test# exit
+[?2004lexit
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat file
+[?2004lcat: file: Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ sudo su
+[?2004l[?2004h]0;root@ubuntu-jammy: /home/vagrant/testroot@ubuntu-jammy:/home/vagrant/test# chmod 640 file
+[?2004l[?2004h]0;root@ubuntu-jammy: /home/vagrant/testroot@ubuntu-jammy:/home/vagrant/test# ls -l file
+[?2004l-rw-r----- 1 root root 5 Apr  3 21:19 file
+[?2004h]0;root@ubuntu-jammy: /home/vagrant/testroot@ubuntu-jammy:/home/vagrant/test# exit
+[?2004lexit
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat file
+[?2004lcat: file: Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls -l file
+[?2004l-rw-r----- 1 root root 5 Apr  3 21:19 file
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ groups
+[?2004lvagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ whoami
+[?2004lvagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ groupmems[K[K[K[K[K[K[K[K[Kыг[K[Ksudo su
+[?2004l[?2004h]0;root@ubuntu-jammy: /home/vagrant/testroot@ubuntu-jammy:/home/vagrant/test# chown root:vagrant file
+[?2004l[?2004h]0;root@ubuntu-jammy: /home/vagrant/testroot@ubuntu-jammy:/home/vagrant/test# exit
+[?2004lexit
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ whoami
+[?2004lvagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat file
+[?2004ltest
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat /etc/passwd >>dz3.txt
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat /etc/group >> dz3.txt
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ ls
+[?2004l[0m[01;34mdir[0m  dz3.txt  file  file1  file2
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ cat dz3.txt
+[?2004lroot:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:113::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:114::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+landscape:x:111:116::/var/lib/landscape:/usr/sbin/nologin
+fwupd-refresh:x:112:117:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+vagrant:x:1000:1000:,,,:/home/vagrant:/bin/bash
+ubuntu:x:1001:1001:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+user01:x:1002:1002:Sam Smith,,+1234567890,:/home/user01:/bin/sh
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,ubuntu
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:ubuntu
+fax:x:21:
+voice:x:22:
+cdrom:x:24:ubuntu
+floppy:x:25:ubuntu
+tape:x:26:
+sudo:x:27:ubuntu,user01
+audio:x:29:ubuntu
+dip:x:30:ubuntu
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:ubuntu
+sasl:x:45:
+plugdev:x:46:ubuntu
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+uuidd:x:113:
+tcpdump:x:114:
+_ssh:x:115:
+landscape:x:116:
+fwupd-refresh:x:117:
+admin:x:118:
+netdev:x:119:ubuntu
+lxd:x:120:ubuntu
+vagrant:x:1000:
+ubuntu:x:1001:
+user01:x:1002:
+group01:x:1003:user01,vagrant
+[?2004h]0;vagrant@ubuntu-jammy: ~/test[01;32mvagrant@ubuntu-jammy[00m:[01;34m~/test[00m$ s[Kexit
+[?2004lexit
+
+Script done on 2025-04-03 21:57:04+00:00 [COMMAND_EXIT_CODE="0"]

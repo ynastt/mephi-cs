@@ -1,0 +1,268 @@
+Script started on 2025-04-09 20:58:52+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="81" LINES="21"]
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mls -l /dev/sda{,[123]}[27m ls -l /dev/sda{,[123]}
+[?2004lbrw-rw---- 1 root disk 8, 0 Apr  9 20:58 [0m[40;33;01m/dev/sda[0m
+brw-rw---- 1 root disk 8, 1 Apr  9 20:57 [40;33;01m/dev/sda1[0m
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mlsblk --list[27m lsblk --list
+[?2004lNAME  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0   7:0    0 89.4M  1 loop /snap/lxd/31333
+loop1   7:1    0 63.7M  1 loop /snap/core20/2496
+loop2   7:2    0 44.4M  1 loop /snap/snapd/23771
+sda     8:0    0   40G  0 disk 
+sda1    8:1    0   40G  0 part /
+sdb     8:16   0   10M  0 disk 
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ lsblk --list | cut -d[K[K[K[K[K[Kgrep NAME MAJ:MIN
+[?2004lgrep: MAJ:MIN: No such file or directory
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ lsblk --list | grep NAME MAJ:MIN[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K awk '{print $1 $2}'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KÐ»[Kk
+[?2004lNAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0    7:0    0 89.4M  1 loop /snap/lxd/31333
+loop1    7:1    0 63.7M  1 loop /snap/core20/2496
+loop2    7:2    0 44.4M  1 loop /snap/snapd/23771
+sda      8:0    0   40G  0 disk 
+â””â”€sda1   8:1    0   40G  0 part /
+sdb      8:16   0   10M  0 disk 
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ lsblk [7m-o NAME,MAJ:MIN,RM,SIZE,RO,TYPE,MOUNTPOINT[27m [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-o NAME,MAJ:MIN,RM,SIZE,RO,TYPE,MOUNTPOINT[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004lNAME   MAJ:MIN
+loop0    7:0  
+loop1    7:1  
+loop2    7:2  
+sda      8:0  
+â””â”€sda1   8:1  
+sdb      8:16 
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mcat /proc/partitions[27m cat /proc/partitions[K[K[K[K[K[K[K[K[K[Kdiskstats
+[?2004l   7       0 loop0 69 0 2232 42 0 0 0 0 0 80 42 0 0 0 0 0 0
+   7       1 loop1 237 0 4474 88 0 0 0 0 0 272 88 0 0 0 0 0 0
+   7       2 loop2 84 0 3456 50 0 0 0 0 0 192 50 0 0 0 0 0 0
+   7       3 loop3 11 0 28 0 0 0 0 0 0 8 0 0 0 0 0 0 0
+   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+   8       0 sda 5479 1707 470600 3180 1246 1332 30682 1738 0 5504 4918 0 0 0 0 0 0
+   8       1 sda1 5349 1707 467048 3118 1246 1332 30682 1738 0 5384 4856 0 0 0 0 0 0
+   8      16 sdb 361 0 6348 161 0 0 0 0 0 272 161 0 0 0 0 0 0
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7m--list | awk '{print $1, $2}'[27m [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--list | awk '{print $1, $2}'[1@l[1@s[1@b[1@l[1@k[1@ 
+[?2004lNAME MAJ:MIN
+loop0 7:0
+loop1 7:1
+loop2 7:2
+sda 8:0
+sda1 8:1
+sdb 8:16
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mcat /proc/devices[27m cat /proc/devices
+[?2004lCharacter devices:
+  1 mem
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  5 ttyprintk
+  7 vcs
+ 10 misc
+ 13 input
+ 21 sg
+ 29 fb
+ 89 i2c
+108 ppp
+128 ptm
+136 pts
+180 usb
+189 usb_device
+204 ttyMAX
+226 drm
+239 aux
+240 cec
+241 lirc
+242 vfio
+243 bsg
+244 watchdog
+245 remoteproc
+246 ptp
+247 pps
+248 rtc
+249 dma_heap
+250 dax
+251 dimmctl
+252 ndctl
+253 tpm
+254 gpiochip
+
+Block devices:
+  7 loop
+  8 sd
+  9 md
+ 11 sr
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+253 device-mapper
+254 mdp
+259 blkext
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ cat /proc/devices | grep sf[Kd
+[?2004l  8 [01;31m[Ksd[m[K
+ 65 [01;31m[Ksd[m[K
+ 66 [01;31m[Ksd[m[K
+ 67 [01;31m[Ksd[m[K
+ 68 [01;31m[Ksd[m[K
+ 69 [01;31m[Ksd[m[K
+ 70 [01;31m[Ksd[m[K
+ 71 [01;31m[Ksd[m[K
+128 [01;31m[Ksd[m[K
+129 [01;31m[Ksd[m[K
+130 [01;31m[Ksd[m[K
+131 [01;31m[Ksd[m[K
+132 [01;31m[Ksd[m[K
+133 [01;31m[Ksd[m[K
+134 [01;31m[Ksd[m[K
+135 [01;31m[Ksd[m[K
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7m dd if=/dev/zero of=./fs.img bs=1M count=10[27m [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C dd if=/dev/zero of=./fs.img bs=1M count=10
+[?2004l10+0 records in
+10+0 records out
+10485760 bytes (10 MB, 10 MiB) copied, 0.00853727 s, 1.2 GB/s
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mlosetup --find --show ./fs.img[27m [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Closetup --find --show ./fs.img
+[?2004llosetup: ./fs.img: failed to set up loop device: Permission denied
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ losetup --find --show ./fs.img  [1@s[1@u[1@d[1@o[1@ 
+[?2004l/dev/loop3
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo [7mlosetup --list[27m losetup --list
+[?2004lNAME  SIZELIMIT OFFSET AUTOCLEAR RO BACK-FILE                         DIO LOG-SEC
+/dev/loop1
+              0      0         1  1 /var/lib/snapd/snaps/core20_2496.snap
+                                                                        0     512
+/dev/loop2
+              0      0         1  1 /var/lib/snapd/snaps/snapd_23771.snap
+                                                                        0     512
+/dev/loop0
+              0      0         1  1 /var/lib/snapd/snaps/lxd_31333.snap
+                                                                        0     512
+/dev/loop3
+              0      0         0  0 /home/vagrant/fs.img                0     512
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo [7m mkfs -t ext4 /dev/loop5[27m mkfs -t ext4 /dev/loop5[1P
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo mkfs -t ext4 /dev/loop5[K3
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+Discarding device blocks:    0/2560         done                            
+Creating filesystem with 2560 4k blocks and 2560 inodes
+
+Allocating group tables: 0/1   done                            
+Writing inode tables: 0/1   done                            
+Creating journal (1024 blocks): done
+Writing superblocks and filesystem accounting information: 0/1   done
+
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ blkid /dev/loop3
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ blkid /dev/loop3[K5
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mlsblk --list[27m lsblk --list
+[?2004lNAME  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0   7:0    0 89.4M  1 loop /snap/lxd/31333
+loop1   7:1    0 63.7M  1 loop /snap/core20/2496
+loop2   7:2    0 44.4M  1 loop /snap/snapd/23771
+loop3   7:3    0   10M  0 loop 
+sda     8:0    0   40G  0 disk 
+sda1    8:1    0   40G  0 part /
+sdb     8:16   0   10M  0 disk 
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ lsblk --listblkid /dev/loop53
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo blkid /dev/loop3
+[?2004l/dev/loop3: UUID="fa9b94bd-dab7-41e0-9f84-592c31291fc1" BLOCK_SIZE="4096" TYPE="ext4"
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo [7m mount /dev/loop5 /mnt[27m  mount /dev/loop5 /mnt[C[1P /mnt3 /mnt
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mmount | grep /mnt[27m mount | grep /mnt
+[?2004l/dev/loop3 on [01;31m[K/mnt[m[K type ext4 (rw,relatime)
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mdf -h /mnt[27m df -h /mnt
+[?2004lFilesystem      Size  Used Avail Use% Mounted on
+/dev/loop3      5.4M   24K  4.7M   1% /mnt
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7m df -hi /mnt[27m  df -hi /mnt
+[?2004lFilesystem     Inodes IUsed IFree IUse% Mounted on
+/dev/loop3       2.5K    11  2.5K    1% /mnt
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ [7mumount /dev/loop5[27m umount /dev/loop5[K3
+[?2004lumount: /mnt: must be superuser to unmount.
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sud[K[K[Kumount /dev/loop3 [1@s[C[1@u[1@d[1@o[1@ 
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo [K[7m tune2fs -l /dev/loop5[27m  tune2fs -l /dev/loop5[K3
+[?2004ltune2fs 1.46.5 (30-Dec-2021)
+Filesystem volume name:   <none>
+Last mounted on:          <not available>
+Filesystem UUID:          fa9b94bd-dab7-41e0-9f84-592c31291fc1
+Filesystem magic number:  0xEF53
+Filesystem revision #:    1 (dynamic)
+Filesystem features:      has_journal ext_attr resize_inode dir_index filetype extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+Filesystem flags:         signed_directory_hash 
+Default mount options:    user_xattr acl
+Filesystem state:         clean
+Errors behavior:          Continue
+Filesystem OS type:       Linux
+Inode count:              2560
+Block count:              2560
+Reserved block count:     128
+Overhead clusters:        1189
+Free blocks:              1365
+Free inodes:              2549
+First block:              0
+Block size:               4096
+Fragment size:            4096
+Group descriptor size:    64
+Reserved GDT blocks:      1
+Blocks per group:         32768
+Fragments per group:      32768
+Inodes per group:         2560
+Inode blocks per group:   160
+Flex block group size:    16
+Filesystem created:       Wed Apr  9 21:18:36 2025
+Last mount time:          Wed Apr  9 21:21:34 2025
+Last write time:          Wed Apr  9 21:22:42 2025
+Mount count:              1
+Maximum mount count:      -1
+Last checked:             Wed Apr  9 21:18:36 2025
+Check interval:           0 (<none>)
+Lifetime writes:          685 kB
+Reserved blocks uid:      0 (user root)
+Reserved blocks gid:      0 (group root)
+First inode:              11
+Inode size:	          256
+Required extra isize:     32
+Desired extra isize:      32
+Journal inode:            8
+Default directory hash:   half_md4
+Directory Hash Seed:      6088d046-601d-4ff9-82c5-d95252492658
+Journal backup:           inode blocks
+Checksum type:            crc32c
+Checksum:                 0xb27bba1a
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo tune2fs -l /dev/loop3 | grep -i "Free blocks"
+[?2004l[01;31m[KFree blocks[m[K:              1365
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo tune2fs -l /dev/loop3 | grep -i "Free blocks"[1P"[1P"[1P"[1P"[1P"[1P"i"n"o"d"e"s"[C
+[?2004l[01;31m[KFree inodes[m[K:              2549
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo tune2fs -l /dev/loop3 | grep -i "Free inodes"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"M"o"u"n"t" "c"o"u"n"t"
+[?2004l[01;31m[KMount count[m[K:              1
+Maximum [01;31m[Kmount count[m[K:      -1
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo tune2fs -l /dev/loop3 | grep -i "Mount count"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"L"a"s"t" "m"o"u"n"t" "t"i"m"e"[C
+[?2004l[01;31m[KLast mount time[m[K:          Wed Apr  9 21:21:34 2025
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo [7mlosetup --detach /dev/loop5[27m losetup --detach /dev/loop5[K3
+[?2004l[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ sudo losetup --list
+[?2004lNAME  SIZELIMIT OFFSET AUTOCLEAR RO BACK-FILE                         DIO LOG-SEC
+/dev/loop1
+              0      0         1  1 /var/lib/snapd/snaps/core20_2496.snap
+                                                                        0     512
+/dev/loop2
+              0      0         1  1 /var/lib/snapd/snaps/snapd_23771.snap
+                                                                        0     512
+/dev/loop0
+              0      0         1  1 /var/lib/snapd/snaps/lxd_31333.snap
+                                                                        0     512
+[?2004h]0;vagrant@ubuntu-jammy: ~ [01;32mvagrant@ubuntu-jammy[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2025-04-09 21:28:03+00:00 [COMMAND_EXIT_CODE="0"]
